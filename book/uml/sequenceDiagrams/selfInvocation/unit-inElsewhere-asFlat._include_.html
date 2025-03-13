@@ -6,14 +6,14 @@
 <div>
 <p><strong>UML can show a method of an object calling another of its own methods.</strong></p>
 <p>Notation:</p>
-<pic eager src="/website/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" width="200"></pic>
+<pic eager src="/cs2103-website/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" width="200"></pic>
 <p></p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code class="line-numbers hljs inline no-lang" v-pre>markCellAt(...)</code> method of a <code class="line-numbers hljs inline no-lang" v-pre>Logic</code> object is calling its own <code class="line-numbers hljs inline no-lang" v-pre>updateState(...)</code> method.</p>
-<pic eager src="/website/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" width="350"></pic>
+<pic eager src="/cs2103-website/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" width="350"></pic>
 <p></p>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In this variation, the <code class="line-numbers hljs inline no-lang" v-pre>Book#write()</code> method is calling the <code class="line-numbers hljs inline no-lang" v-pre>Chapter#getText()</code> method which in turn does a <em>call back</em> by calling the <code class="line-numbers hljs inline no-lang" v-pre>getAuthor()</code> method of the calling object.</p>
-<pic eager src="/website/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" width="350"></pic>
+<pic eager src="/cs2103-website/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" width="350"></pic>
 <p></p></box>
 <p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>'Unroll' chained/compound method calls before drawing sequence diagram.</strong> Consider the Java statement <code class="line-numbers hljs inline java" v-pre><span class="hljs-keyword">new</span> Book().add(<span class="hljs-keyword">new</span> Chapter());</code>. How do we show it as a sequence diagram? First, 'unroll' it into a simpler series of statements, which can then be drawn as a sequence diagram easily. For example, that statement is equivalent to the following:</p>
 <pre><code class="no-line-numbers hljs java" v-pre><span>Book b = <span class="hljs-keyword">new</span> Book();
