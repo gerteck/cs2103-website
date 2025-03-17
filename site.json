@@ -69,7 +69,7 @@
     }
   },
     "deploy": {
-    "message": "Site Update.",
+    "message": "Site Update. Fix Retriever",
     "branch": "gh-pages"
   }
 }
