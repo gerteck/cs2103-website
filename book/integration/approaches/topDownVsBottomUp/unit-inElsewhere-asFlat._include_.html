@@ -17,7 +17,7 @@
 <div>
 <div><br>
 <h5 id="exercises"><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Exercises:<a class="fa fa-anchor" href="#exercises" onclick="event.stopPropagation()"></a></h5>
-<div><div><panel><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Suggest an integration strategy</p></template>
+<div><div><panel class="algolia-no-index"><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Suggest an integration strategy</p></template>
 <p>Suggest an integration strategy for the system represented by the following diagram. You need not follow a strict top-down, bottom-up, sandwich, or big bang approach. Dashed arrows represent dependencies between classes.</p>
 <p>Also take into account the following facts in your test strategy:</p>
 <ul>
@@ -27,7 +27,7 @@
 <li>Development of the <code class="line-numbers hljs inline no-lang" v-pre>OutPatient</code> component has been outsourced, and its delivery is not expected until the 2nd half of the project.</li></ul>
 <pic eager src="/cs2103-website/book/integration/approaches/topDownVsBottomUp/images/hospital.png" height="250"></pic>
 <p></p>
-<panel type="seamless" minimized><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Answer</p></template>
+<panel type="seamless" minimized class="algolia-no-index"><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Answer</p></template>
 <p>There can be many acceptable answers to this question. But any good strategy should consider at least some of the following:</p>
 <ul>
 <li>Because <code class="line-numbers hljs inline no-lang" v-pre>HospitalUI</code> will be developed early, it’s OK to integrate it early, using stubs, rather than wait for the rest of the system to finish. (i.e. a top-down integration is suitable for <code class="line-numbers hljs inline no-lang" v-pre>HospitalUI</code>)</li>
@@ -38,7 +38,7 @@
 <p>Given below is one possible integration test strategy. The relative positioning of items is used to indicate a rough timeline.</p>
 <pic eager src="/cs2103-website/book/integration/approaches/topDownVsBottomUp/images/hospitalIntegration.png" height="250"></pic>
 <p></p></panel></panel></div>
-<div><panel><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Integration order</p></template>
+<div><panel class="algolia-no-index"><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Integration order</p></template>
 <p>Consider the architecture given below. Describe the order in which components will be integrated with one another if the following integration strategies were adopted.</p>
 <p>a)	top-down<br>
 b)	bottom-up<br>
@@ -46,7 +46,7 @@ c)	sandwich</p>
 <p>Note that dashed arrows show dependencies (e.g. A depends on B, C and D, and is therefore higher-level than B, C and D).</p>
 <pic eager src="/cs2103-website/book/integration/approaches/topDownVsBottomUp/images/abc.png" height="190"></pic>
 <p></p>
-<panel type="seamless" minimized><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Answer</p></template>
+<panel type="seamless" minimized class="algolia-no-index"><template #header><p><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Answer</p></template>
 <p>a) Diagram:</p>
 <pic eager src="/cs2103-website/book/integration/approaches/topDownVsBottomUp/images/aAnswer.png" height="230"></pic>
 <p></p>
