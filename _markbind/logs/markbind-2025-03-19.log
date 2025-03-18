@@ -1,0 +1,38 @@
+2025-03-18T16:52:06.757Z - info: Website generation (lazy) started at 12:52:03 am
+2025-03-18T16:52:09.457Z - warn: ENOENT: no such file or directory, open 'C:\Users\Ger Teck\dev\cs2103-website\node_modules\.cache\gh-pages\https!github.com!gerteck!cs2103-website.git\book\_markbind\variables.md'
+2025-03-18T16:52:09.457Z - warn: ENOENT: no such file or directory, open 'C:\Users\Ger Teck\dev\cs2103-website\node_modules\.cache\gh-pages\https!github.com!gerteck!cs2103-website.git\_markbind\variables.md'
+2025-03-18T16:52:09.515Z - info: Building assets...
+2025-03-18T16:52:22.398Z - info: Assets built
+2025-03-18T16:52:22.399Z - info: Generating landing page...
+2025-03-18T16:52:23.600Z - info: Landing page built, other pages will be built as you navigate to them!
+2025-03-18T16:52:23.837Z - info: Site data built
+2025-03-18T16:52:23.837Z - info: Website generation (lazy) complete! Total build time: 20.398s
+2025-03-18T16:52:23.859Z - info: Serving "C:\Users\Ger Teck\dev\cs2103-website\_site" at http://127.0.0.1:8080
+2025-03-18T16:52:23.859Z - info: Press CTRL+C to stop ...
+2025-03-18T16:52:27.965Z - info: Building C:\Users\Ger Teck\dev\cs2103-website\schedule\week8\topics as some of its dependencies were changed since the last visit
+2025-03-18T16:52:32.586Z - debug:  
+2025-03-18T16:52:32.586Z - debug:  
+2025-03-18T16:52:32.586Z - debug:  
+2025-03-18T16:52:32.586Z - debug:  
+2025-03-18T16:52:32.586Z - debug:  
+2025-03-18T16:52:32.587Z - debug:  
+2025-03-18T16:52:32.590Z - debug:  
+2025-03-18T16:52:32.590Z - debug:  
+2025-03-18T16:52:32.593Z - debug:  
+2025-03-18T16:52:33.027Z - debug:  
+2025-03-18T16:52:33.033Z - debug:  
+2025-03-18T16:52:34.115Z - debug:  
+2025-03-18T16:52:34.116Z - debug:  
+2025-03-18T16:52:34.117Z - debug:  
+2025-03-18T16:52:34.173Z - debug:  
+2025-03-18T16:52:34.419Z - info: Site data built
+2025-03-18T16:52:34.419Z - info: Lazy website regeneration complete! Total build time: 6.454s
+2025-03-18T16:52:35.134Z - info: Building C:\Users\Ger Teck\dev\cs2103-website\schedule\week9\topics as some of its dependencies were changed since the last visit
+2025-03-18T16:52:37.813Z - debug:  
+2025-03-18T16:52:38.215Z - debug:  
+2025-03-18T16:52:38.365Z - info: Site data built
+2025-03-18T16:52:38.365Z - info: Lazy website regeneration complete! Total build time: 3.232s
+2025-03-18T16:52:52.863Z - info: Website generation started at 12:52:49 am
+2025-03-18T16:52:54.188Z - warn: ENOENT: no such file or directory, open 'C:\Users\Ger Teck\dev\cs2103-website\node_modules\.cache\gh-pages\https!github.com!gerteck!cs2103-website.git\book\_markbind\variables.md'
+2025-03-18T16:52:54.189Z - warn: ENOENT: no such file or directory, open 'C:\Users\Ger Teck\dev\cs2103-website\node_modules\.cache\gh-pages\https!github.com!gerteck!cs2103-website.git\_markbind\variables.md'
+2025-03-18T16:52:54.239Z - info: Building assets...
