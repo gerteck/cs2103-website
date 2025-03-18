@@ -2201,7 +2201,7 @@ Not applicable this semester
 
 <div class="indented">
 
-<big>**Submissions:**</big>
+<span style="font-size:larger">**Submissions:**</span>
 </div>
 
 <div class="indented">

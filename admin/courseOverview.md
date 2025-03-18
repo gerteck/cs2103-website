@@ -6,7 +6,7 @@
 
 <!-- =============================================================================== -->
 <div tags="m--cs2103">
-<p class="lead text-secondary"><big>A balanced, iterative, and brownfield introduction to Software Engineering...</big></p>
+<p class="lead text-secondary"><span style="font-size:larger">A balanced, iterative, and brownfield introduction to Software Engineering...</span></p>
 
 <pic eager src="{{baseUrl}}/images/growingPlant.png" width="700"></pic>
 
@@ -60,7 +60,7 @@ Applications domains | Cross-platform desktop applications | Web programming, Mo
 <!-- =============================================================================== -->
 <div tags="m--cs2113">
 
-<p class="lead text-secondary"><big>An iterative introduction to Software Engineering...</big></p>
+<p class="lead text-secondary"><span style="font-size:larger">An iterative introduction to Software Engineering...</span></p>
 
 <pic eager src="{{baseUrl}}/images/growingPlant.png" width="700"></pic>
 
