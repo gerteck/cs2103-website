@@ -36,3 +36,31 @@
 2025-03-18T16:52:54.188Z - warn: ENOENT: no such file or directory, open 'C:\Users\Ger Teck\dev\cs2103-website\node_modules\.cache\gh-pages\https!github.com!gerteck!cs2103-website.git\book\_markbind\variables.md'
 2025-03-18T16:52:54.189Z - warn: ENOENT: no such file or directory, open 'C:\Users\Ger Teck\dev\cs2103-website\node_modules\.cache\gh-pages\https!github.com!gerteck!cs2103-website.git\_markbind\variables.md'
 2025-03-18T16:52:54.239Z - info: Building assets...
+2025-03-18T16:53:02.642Z - info: Assets built
+2025-03-18T16:53:02.643Z - info: Generating pages...
+2025-03-18T16:53:19.354Z - debug:  
+2025-03-18T16:53:19.355Z - debug:  
+2025-03-18T16:53:19.355Z - debug:  
+2025-03-18T16:53:19.355Z - debug:  
+2025-03-18T16:53:19.355Z - debug:  
+2025-03-18T16:53:19.355Z - debug:  
+2025-03-18T16:53:19.355Z - debug:  
+2025-03-18T16:53:19.356Z - debug:  
+2025-03-18T16:53:19.356Z - debug:  
+2025-03-18T16:53:19.356Z - debug:  
+2025-03-18T16:53:19.361Z - debug:  
+2025-03-18T16:53:19.361Z - debug:  
+2025-03-18T16:53:19.361Z - debug:  
+2025-03-18T16:53:19.361Z - debug:  
+2025-03-18T16:53:19.361Z - debug:  
+2025-03-18T16:53:19.361Z - debug:  
+2025-03-18T16:53:19.361Z - debug:  
+2025-03-18T16:53:42.977Z - debug:  
+2025-03-18T16:55:23.263Z - debug:  
+2025-03-18T16:55:41.669Z - debug:  
+2025-03-18T16:55:41.700Z - debug:  
+2025-03-18T16:55:56.468Z - info: Pages built
+2025-03-18T16:55:56.697Z - info: Site data built
+2025-03-18T16:55:56.697Z - info: Website generation complete! Total build time: 186.989s
+2025-03-18T16:55:56.697Z - info: Build success!
+2025-03-18T16:57:08.381Z - info: The website has been deployed at: https://gerteck.github.io/cs2103-website
