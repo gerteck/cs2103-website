@@ -60,16 +60,28 @@
   "intrasiteLinkValidation": {
     "enabled": false
   },
-  "enableSearch": true,
+  "enableSearch": false,
   "headingIndexingLevel": 5,
-  "plugins": ["filterTags", "codeBlockCopyButtons", "codeBlockWrapButtons", "dataTable", "mermaid"],
+  "plugins": ["filterTags", "googleAnalytics", "algolia", "codeBlockCopyButtons", "codeBlockWrapButtons", "dataTable", "mermaid"],
   "pluginsContext": {
     "filterTags" : {
       "tags": ["m--cs2103"]
+    },
+    "googleAnalytics": {
+       "trackingID": "UA-122519234-1"
+    },
+    "algolia": {
+      "apiKey": "772d7386c7a785f7a60fec5a096311ef",
+      "appId": "3DU4XTBX4T",
+      "indexName": "nus-tic2002-2020a",
+      "searchParameters": {
+        "facetFilters": [["site:nus-cs2103-ay2425s2.github.io"], ["tags:admin", "tags:se-book-adapted", "tags:schedule"]]
+      }
     }
   },
-    "deploy": {
-    "message": "Site Update. Fix Mobile Nav whitespace",
+  "deploy": {
+    "message": "Site Update. Latest after directive fix",
     "branch": "gh-pages"
   }
+
 }

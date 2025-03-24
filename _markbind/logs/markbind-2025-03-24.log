@@ -1,0 +1,4 @@
+2025-03-24T05:00:21.448Z - info: Website generation started at 1:00:18 pm
+2025-03-24T05:00:23.409Z - warn: ENOENT: no such file or directory, open 'C:\Users\chang\dev\cs2103-website\node_modules\.cache\gh-pages\https!github.com!gerteck!cs2103-website.git\book\_markbind\variables.md'
+2025-03-24T05:00:23.411Z - warn: ENOENT: no such file or directory, open 'C:\Users\chang\dev\cs2103-website\node_modules\.cache\gh-pages\https!github.com!gerteck!cs2103-website.git\_markbind\variables.md'
+2025-03-24T05:00:23.527Z - info: Building assets...
