@@ -171,7 +171,7 @@
 <variable name="icon_lecture"><md>:glyphicon-blackboard:</md></variable>
 <variable name="icon_like"><md>:fas-thumbs-up:</md></variable>
 <variable name="icon_linux"><md>:fab-linux:</md></variable>
-<variable name="icon_important_big_red"><span style="color: red"><big><md>:glyphicon-exclamation-sign:</md></big></span></variable>
+<variable name="icon_important_big_red"><span style="color: red"><span style="font-size:larger"><md>:glyphicon-exclamation-sign:</md></span></span></variable>
 <variable name="icon_important"><md>:glyphicon-exclamation-sign:</md></variable>
 <variable name="icon_new_window"><md>:glyphicon-new-window:</md></variable>
 <variable name="icon_outcome"><md>:fas-trophy:</md></variable>
@@ -224,7 +224,7 @@
 <variable name="conditional"><span class="badge rounded-pill bg-warning text-dark">CONDITIONAL</span></variable>
 <variable name="required"><span class="badge rounded-pill bg-danger">REQUIRED</span></variable>
 <variable name="optional"><span class="badge rounded-pill bg-success">OPTIONAL</span></variable>
-<variable name="evidence"><big>{{ icon_evidence | safe }} Evidence:</big></variable>
+<variable name="evidence"><span style="font-size:larger">{{ icon_evidence | safe }} Evidence:</span></variable>
 
 <variable name="edition_badge"><small><small><small><span class='badge rounded-pill bg-{{ course_color }}'>{{ course_pair }} edition - {{ period }}</span></small></small></small></variable>
 <variable name="M"><span class="badge bg-info">&nbsp;{{ course }}&nbsp;</span></variable>

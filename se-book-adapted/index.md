@@ -9,10 +9,10 @@
 
 
 {% macro show_section(section) %}
-<big>
+<span style="font-size:larger">
 
 **{{ section.heading}}**
-</big>
+</span>
 {% for chapter in section.chapters %}
   {{ show_chapter(section, chapter) }}
 {% endfor %}
@@ -37,10 +37,10 @@ layout: textbook-layout.md
   {{ show_section(section) }}
 {% endfor %}
 
-<big>
+<span style="font-size:larger">
 
 {% if not tee3201 %}
-**Supplementary**</big>
+**Supplementary**</span>
 
 {{ show_chapter("dummy", config.chapters.cppToJava) }}
 * [Project Duke](projectDuke/index.html)
