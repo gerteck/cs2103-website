@@ -80,8 +80,7 @@
     }
   },
   "deploy": {
-    "message": "Site Update. Latest after directive fix",
+    "message": "Site Update. Update variables via pull",
     "branch": "gh-pages"
   }
-
 }
