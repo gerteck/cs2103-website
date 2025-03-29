@@ -16,6 +16,8 @@
 </span></strong></span></p> <div id="title-and-body"><div><h4 id="push-uploading-data-to-other-repos"><span><code class="line-numbers hljs inline no-lang">push</code>: Uploading data to other repos</span><a class="fa fa-anchor" href="#push-uploading-data-to-other-repos" onclick="event.stopPropagation()"></a></h4></div> <div id="main"><div><div id="simple-push"><p>Given below is a scenario you can try in order to learn how to <span class="trigger-click" tabindex="0"><span><!--[-->push<!--]--></span></span> commits to a remote repo hosted on GitHub:</p> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--> <p><strong>1. Fork</strong> an existing GitHub repo (e.g., <a href="https://github.com/se-edu/samplerepo-things">samplerepo-things</a>) to your GitHub account.</p> <p><strong>2. Clone the fork</strong> (not the original) to your computer.</p> <p><strong>3. Commit</strong> some changes in your local repo.</p> <p><strong>4. Push</strong> the new commits to your fork on GitHub</p> <div class="printable-tabs" data-v-d4856fc0><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-d4856fc0><!--[--><!--]--></ul><div class="tab-content" data-v-d4856fc0><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->Sourcetree<!--]--></div></div><!--[--> <div><p>Click the <code class="line-numbers hljs inline no-lang">Push</code> button on the main menu, ensure the settings are as follows in the next dialog, and click the <code class="line-numbers hljs inline no-lang">Push</code> button on the dialog.</p> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/push/images/sourcetree_1.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span> <p></p></div><!--]--><hr data-v-720ba04a></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide algolia-no-index" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->CLI<!--]--></div></div><!--[--> <div><p>Use the command <code class="line-numbers hljs inline no-lang">git push origin master</code>. Enter your Github username and password when prompted.</p></div><!--]--><hr data-v-720ba04a></div><!--]--></div></div> <p><strong>5. Add a few more commits, and <span class="trigger-click" tabindex="0"><span><!--[-->tag<!--]--></span></span> some of them.</strong></p> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--> <p><strong>6. Push the new commits <mark><em>and</em> the tags</mark>.</strong></p> <div class="printable-tabs" data-v-d4856fc0><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-d4856fc0><!--[--><!--]--></ul><div class="tab-content" data-v-d4856fc0><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->Sourcetree<!--]--></div></div><!--[--> <div><p>Push similar to before, but ensure the <code class="line-numbers hljs inline no-lang">[ ] Push all tags</code> option in the push dialog is ticked as well.
 <br> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/push/images/pushTags.png" width="500" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span></p></div><!--]--><hr data-v-720ba04a></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide algolia-no-index" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->CLI<!--]--></div></div><!--[--> <div><p>A normal push does not include tags. After pushing the commits (as before), push tags to the repo as well:</p> <p>To push a specific tag:</p> <pre><code class="no-line-numbers hljs"><span>$ git push origin v1.0b
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -31,9 +33,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -49,9 +54,12 @@
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p>To push all tags:</p> <pre><code class="no-line-numbers hljs"><span>$ git push origin --tags
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -67,9 +75,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -85,11 +96,12 @@
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></div><!--]--><hr data-v-720ba04a></div><!--]--></div></div></div> <div class="alert box-container alert-default" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><strong><strong>You can push to repos other than the one you cloned from</strong></strong>, as long as the target repo and your repo have a shared history.</p> <ol><li><span class="trigger-click" tabindex="0"><span><!--[-->Add the GitHub repo URL as a remote<!--]--></span></span>, if you haven&#39;t done so already.</li> <li>Push to the target repo.</li></ol> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--> <div class="printable-tabs" data-v-d4856fc0><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-d4856fc0><!--[--><!--]--></ul><div class="tab-content" data-v-d4856fc0><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->Sourcetree<!--]--></div></div><!--[--> <div><p>Push your repo to the new remote the usual way, but select the name of target remote instead of <code class="line-numbers hljs inline no-lang">origin</code> and remember to select the <code class="line-numbers hljs inline no-lang">Track</code> checkbox.<br> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/push/images/pushToRemote.png" width="470" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span></p></div><!--]--><hr data-v-720ba04a></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide algolia-no-index" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->CLI<!--]--></div></div><!--[--> <div><p>Push to the new remote the usual way  e.g., <code class="line-numbers hljs inline no-lang">git push upstream1 master</code> (assuming you gave the name <code class="line-numbers hljs inline no-lang">upstream1</code> to the remote).</p></div><!--]--><hr data-v-720ba04a></div><!--]--></div></div><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div class="alert box-container alert-default" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><strong><strong>You can even push an entire local repository to GitHub</strong></strong>, to form an entirely new remote repository. For example, you created a local repo and worked with it for a while but now you want to upload it onto GitHub (as a backup or to share it with others). The steps are given below.</p> <p><strong>1. Create an <mark>empty</mark> remote repo on GitHub.</strong></p> <ol><li><p>Login to your GitHub account and choose to create a new Repo. <br> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/push/images/createNewRemoteRepo.png" width="150" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span></p></li> <li><p>In the next screen, provide a name for your repo but keep the <code class="line-numbers hljs inline no-lang">Initialize this repo ...</code> tick box unchecked.<br> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/push/images/fillNewRepoInfo.png" width="600" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span></p></li> <li><p>Note the URL of the repo. It will be of the form <code class="line-numbers hljs inline no-lang">https://github.com/{your_user_name}/{repo_name}.git</code>.<br>
 e.g., <code class="line-numbers hljs inline no-lang">https://github.com/johndoe/foobar.git</code> (note the <code class="line-numbers hljs inline no-lang">.git</code> at the end)<br> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/push/images/newRepoUrl.png" width="450" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span></p></li></ol> <p><strong>2. <span class="trigger-click" tabindex="0"><span><!--[-->Add the GitHub repo URL as a remote<!--]--></span></span></strong> of the local repo. You can give it the name <code class="line-numbers hljs inline no-lang">origin</code> (or any other name).</p> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--> <p><strong>3. Push the repo</strong> to the remote.</p> <div class="printable-tabs" data-v-d4856fc0><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-d4856fc0><!--[--><!--]--></ul><div class="tab-content" data-v-d4856fc0><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->Sourcetree<!--]--></div></div><!--[--> <div><span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/push/images/pushToRemote.png" width="470" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span></div><!--]--><hr data-v-720ba04a></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide algolia-no-index" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->CLI<!--]--></div></div><!--[--> <div><p>Push each branch to the new remote the usual way <mark>but use the <code class="line-numbers hljs inline no-lang">-u</code> flag</mark> to inform Git that you wish to <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
  --><!----></span> the branch.<br>
-e.g., <code class="line-numbers hljs inline no-lang">git push -u origin master</code></p></div><!--]--><hr data-v-720ba04a></div><!--]--></div></div><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+e.g., <code class="line-numbers hljs inline no-lang">git push -u origin master</code></p></div><!--]--><hr data-v-720ba04a></div><!--]--></div></div><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -128,7 +140,8 @@ e.g., <code class="line-numbers hljs inline no-lang">git push -u origin master</
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -138,7 +151,7 @@ e.g., <code class="line-numbers hljs inline no-lang">git push -u origin master</
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -149,8 +162,10 @@ e.g., <code class="line-numbers hljs inline no-lang">git push -u origin master</
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -164,17 +179,21 @@ e.g., <code class="line-numbers hljs inline no-lang">git push -u origin master</
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>

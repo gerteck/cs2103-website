@@ -22,6 +22,8 @@
 </span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Goo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Foo</span>&lt;<span class="hljs-title">String</span>&gt; </span>{
 </span><span>}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -37,9 +39,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -56,7 +61,8 @@
 </svg>
 
     </div>
-    </button></div></pre><span class="image-wrapper"><img src="/cs2103-website/book/uml/classDiagrams/classInheritance/what/images/cd-inheritance-and-generics.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div> <div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-1f482349><button type="button" class="collapse-button btn btn-seamless" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-1f482349></div><!----></div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+    </div>
+    </button></div></pre><span class="image-wrapper"><img src="/cs2103-website/book/uml/classDiagrams/classInheritance/what/images/cd-inheritance-and-generics.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div> <div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-1f482349><button type="button" class="collapse-button btn btn-seamless" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-1f482349></div><!----></div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -95,7 +101,8 @@
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -105,7 +112,7 @@
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -116,8 +123,10 @@
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -131,17 +140,21 @@
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>

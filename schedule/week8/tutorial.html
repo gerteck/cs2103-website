@@ -23,6 +23,8 @@ Use the following layout:<br> <span class="image-wrapper" eager><img src="/cs210
 </span><span>    }
 </span><span>}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -38,9 +40,12 @@ Use the following layout:<br> <span class="image-wrapper" eager><img src="/cs210
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -57,7 +62,8 @@ Use the following layout:<br> <span class="image-wrapper" eager><img src="/cs210
 </svg>
 
     </div>
-    </button></div></pre></div> <ol start="2"><li><span class="badge bg-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> during the tutorial</span></span>:</li></ol> <div class="indented"><ul><li>As before, paste the diagram in the <em>tutorial workspace</em> document, and take part in the follow-up discussion, as guided by the tutor.</li></ul></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"><nav id="mb-page-nav" class="nav nav-pills flex-column my-0 small no-flex-wrap" data-v-6b1b63d2><!--[--><a class="nav-link py-1" href="#week-8-mon-mar-10th-tutorial">Week 8 [Mon, Mar 10th] - Tutorial‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#1-exercise-draw-a-class-diagram-and-an-object-diagram">1 Exercise: draw a class diagram and an object diagram‎</a> <a class="nav-link py-1" href="#2-exercise-draw-a-sequence-diagram">2 Exercise: draw a sequence diagram‎</a></nav><!--]--><!--v-if--></nav></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+    </div>
+    </button></div></pre></div> <ol start="2"><li><span class="badge bg-info font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> during the tutorial</span></span>:</li></ol> <div class="indented"><ul><li>As before, paste the diagram in the <em>tutorial workspace</em> document, and take part in the follow-up discussion, as guided by the tutor.</li></ul></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"><nav id="mb-page-nav" class="nav nav-pills flex-column my-0 small no-flex-wrap" data-v-6b1b63d2><!--[--><a class="nav-link py-1" href="#week-8-mon-mar-10th-tutorial">Week 8 [Mon, Mar 10th] - Tutorial‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#1-exercise-draw-a-class-diagram-and-an-object-diagram">1 Exercise: draw a class diagram and an object diagram‎</a> <a class="nav-link py-1" href="#2-exercise-draw-a-sequence-diagram">2 Exercise: draw a sequence diagram‎</a></nav><!--]--><!--v-if--></nav></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -96,7 +102,8 @@ Use the following layout:<br> <span class="image-wrapper" eager><img src="/cs210
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -106,7 +113,7 @@ Use the following layout:<br> <span class="image-wrapper" eager><img src="/cs210
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -117,8 +124,10 @@ Use the following layout:<br> <span class="image-wrapper" eager><img src="/cs210
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -132,17 +141,21 @@ Use the following layout:<br> <span class="image-wrapper" eager><img src="/cs210
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>

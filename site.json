@@ -80,7 +80,7 @@
     }
   },
   "deploy": {
-    "message": "Site Update. Update variables via pull",
+    "message": "Site Update. Update Picture sizing",
     "branch": "gh-pages"
   }
 }

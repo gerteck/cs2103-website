@@ -23,6 +23,8 @@
 <ul><li>Mention in the Developer Guide (under the <em>Acknowledgements</em> section)</li> <li>Mention in <span class="trigger-click" tabindex="0"><span><!--[-->Project Portfolio Page<!--]--></span></span> if the library has a significant relevance to the features you implemented.</li></ul></li></ul> <p>If you <strong>reused code snippets found on the Internet</strong> <span class="dimmed">e.g. from StackOverflow answers</span> or<br> <strong>referred code in another software</strong> or<br> <strong>referred project code by current/past student</strong>:</p> <ul><li>If you read the code to understand the approach and implemented it yourself, mention it as a comment<br> <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment"><span>//Solution below <span class="highlighted">inspired</span> by https://stackoverflow.com/a/16252290</span></span>
 </span><span>{Your implementation of the reused solution here ...}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -38,9 +40,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -56,10 +61,13 @@
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></li> <li>If you copy-pasted code from elsewhere but modified it significantly, mention it as a comment<br> <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment"><span>//Solution below <span class="highlighted">adapted</span> from https://stackoverflow.com/a/16252290</span></span>
 </span><span>{Your implementation of the reused solution here ...}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -75,9 +83,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -93,6 +104,7 @@
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></li> <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using <span class="trigger-click" tabindex="0"><span><!--[--><code class="line-numbers hljs inline no-lang">@@author</code> tags<!--]--></span></span> with the <mark><code class="line-numbers hljs inline no-lang">-reused</code></mark> suffix)<br>
 Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment"><span>//<span class="highlighted">@@author</span> {yourGithubUsername}-reused</span></span>
@@ -102,6 +114,8 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 </span><span><span class="hljs-function"></span>
 </span><span><span class="hljs-function"><span class="hljs-comment"><span>//<span class="highlighted">@@author</span></span></span></span>
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -117,9 +131,12 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -135,6 +152,7 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):<pre><code class="line-numbers hljs java"><span>persons = getList()
 </span><span><span class="hljs-comment"><span>//<span class="highlighted">@@author</span> johndoe-reused</span></span>
@@ -149,6 +167,8 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 </span><span><span class="hljs-comment"><span>//<span class="highlighted">@@author</span></span></span>
 </span><span><span class="hljs-keyword">return</span> persons;
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -164,9 +184,12 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -183,6 +206,7 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 </svg>
 
     </div>
+    </div>
     </button></div></pre></li></ul> <div tags="m--cs2103"><p><strong>Giving credit for reused images</strong> (and other media assets): Ideally, the source should be credited where the asset appears. For example, if you reused an image in your GUI, you can credit the source where a screenshot of the GUI showing that image appears first in your user guide. In addition, you can also acknowledge the sources in your GitHub project&#39;s landing page (e.g., <code class="line-numbers hljs inline no-lang">README.md</code>)</p> <p><strong>Giving credit to AB3 code</strong>: If your team project code follows a design similar to AB3, that doesn&#39;t mean you need to credit AB3 -- this is because a brownfield project is <em>expected</em> to follow existing code/design where possible, in the interest of consistency. This type of reuse need not be acknowledged/credited specifically.</p> <p><strong>Giving credit to AB4 code</strong>: If you reused any code from <a href="https://github.com/se-edu/addressbook-level4/">AB4</a>, cite it as you would cite reuse from any other external source.</p></div> <p><strong>Giving credit for reusing from course materials</strong> (e.g., course textbook, tutorials, instructional resources from se-education.org) is not required, although you are welcome to do so. Reason: Those materials were created by the teaching team for you to use/reuse.</p> <p><strong>Reuse within the team</strong> <span class="dimmed">(e.g., reusing code written by a team member)</span> need not be mentioned explicitly. However, you should factor in such reuse when you estimate effort contributed by each team member.</p> <p><strong>Reuse of documentation</strong> <span class="dimmed">(e.g., reusing a UG/DG section)</span> is no different from code reuse. Such reuse should be credited as well.</p> <p><strong>Citing the use of AI-generated/assisted work</strong> <span class="dimmed">(e.g., using GitHub Copilot for project work)</span>:</p> <ul><li>If the use of the tool was localized into a few places <span class="dimmed">(e.g., used it to write a few methods/classes only)</span>, cite its use in comments near where you used it.</li> <li>If the use was more widespread <span class="dimmed">(e.g., used it as an auto-complete tool during most of your coding)</span>, cite the usage (i.e., which tool, who used it, the extent of use) in the following location instead (i.e., no need to cite in code comments):
 <ul><li>iP: in the README file</li> <li>tP: in the DG, under the Acknowledgements section</li></ul></li></ul><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-1f482349><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button></div></div><hr style="display:none;" data-v-1f482349></div><div class="peek-read-more glyphicon glyphicon-chevron-down" data-v-1f482349></div></div></div></div></div> <p></p> <h4 id="2-submit-feedback-for-tutors"><span class="badge rounded-pill bg-dark p-2"><span style="font-size:larger;"><span style="font-size:larger;">2</span></span></span> <span>Submit feedback for tutors</span><a class="fa fa-anchor" href="#2-submit-feedback-for-tutors" onclick="event.stopPropagation()"></a></h4> <div><ul><li>[Not urgent] <strong>A gentle reminder to submit feedback for your tutor</strong> via the semester-end
 student feedback exercise, if you can spare a few minutes.<br>
@@ -193,7 +217,7 @@ performance evaluation.</li></ul></div> <p></p> <h4 id="3-submit-final-peer-eval
  --><!----></span></span><a class="fa fa-anchor" href="#3-submit-final-peer-evaluation-on-teammates-thu-apr-10th-2359-counted-for-participation" onclick="event.stopPropagation()"></a></h4> <div><ul><li>Submission will open within one day after the tP final submission (i.e., sometime in Wed, Apr 9th).<br><span><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If you did not receive the submission link, you can get TEAMMATES to resend the link by going to <a href="https://teammatesv4.appspot.com/web/front/help/session-links-recovery">TEAMMATES link recovery page</a>
 and entering your NUSNET email address (try the <code class="line-numbers hljs inline no-lang">e______@u.nus.edu</code> before trying the &#39;friendly&#39; email address). Remember to check your spam folder as well.</span></li></ul> <div class="indented-level2"><div class="card-container embedding" data-v-1f482349><div class="card expandable-card" data-v-1f482349><div class="card-header header-toggle bg-light" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><!----></div><div class="header-wrapper card-title bg-light" data-v-1f482349><!--[--><!--[--><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Session: Final Peer Evaluation <span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></span></p><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-secondary close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-secondary popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><div class="card-body" data-v-1f482349><!--[--><!--[--> <div><div><h3 id="session-final-peer-evaluation">Session: <code class="line-numbers hljs inline no-lang">Final Peer Evaluation</code><a class="fa fa-anchor" href="#session-final-peer-evaluation" onclick="event.stopPropagation()"></a></h3> <ul><li>Held at the end of the tP.</li> <li>This peer evaluation is compulsory. Not only it will count for weekly participation, <mark>those who don&#39;t submit will not get a chance to rebut peer evaluations received</mark>.</li> <li>This session includes all questions from the Midterm Peer Evaluation:</li></ul> <div class="indented-level1"><span class="card-container embedding algolia-no-index" data-v-1f482349><span class="morph" data-v-1f482349><button class="morph-display-wrapper btn btn-outline-secondary" data-v-1f482349><div class="minimal-caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><span class="card-title" data-v-1f482349><!--[--><!--[--><!--[--><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Session: Midterm Peer Evaluation Questions <span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></span></p><!--]--><!--]--><!--]--></span></button></span></span></div><p></p> <ul><li>In addition, it contains these additional questions:</li></ul> <div class="alert box-container alert-default" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><span class="thumb-wrapper thumb-circle" style="font-size:12.5px;color:white;background:#28a745;"><img class="thumb-image" width="" height="" alt=""><!--[--><strong>Q</strong><!--]--></span> <strong>Do you agree with the contributions claimed by team members, as stated in their PPP?</strong><br>
 You may omit this question for members who have not submitted the <a href="/cs2103-website/admin/tp-deliverables.html#deliverable-project-portfolio-page-ppp">PPP</a>.</p> <p><span class="thumb-wrapper thumb-circle" style="font-size:12.5px;color:white;background:#28a745;"><img class="thumb-image" width="" height="" alt=""><!--[--><strong>Q</strong><!--]--></span> <strong>Rank team members based on their ability/potential to lead a software project team (rank 1 is strongest)</strong></p> <p></p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-1f482349><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="display:none;" data-v-1f482349></div><!----></div></div></div><p></p></div> <p></p> <h4 id="4-submit-the-pe-readiness-quiz-before-the-pe-counted-for-participation"><span class="badge rounded-pill bg-dark p-2"><span style="font-size:larger;"><span style="font-size:larger;">4</span></span></span> <span>Submit the <em>PE-Readiness Quiz</em></span> <span class="badge bg-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> before the PE</span></span> <span class="text-info"><span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
- --><!----></span></span><a class="fa fa-anchor" href="#4-submit-the-pe-readiness-quiz-before-the-pe-counted-for-participation" onclick="event.stopPropagation()"></a></h4> <div><ul><li>Submit this quiz (on Canvas) to confirm that you know important details about the PE.</li></ul></div> <p></p> <div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"><nav id="mb-page-nav" class="nav nav-pills flex-column my-0 small no-flex-wrap" data-v-6b1b63d2><!--[--><a class="nav-link py-1" href="#week-12-mon-apr-7th-admin">Week 12 [Mon, Apr 7th] - Admin‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#1-submit-the-declaration-about-code-reuse-compulsory-tue-apr-15th-2359-counted-for-participation">1 Submit the declaration about code reuse  COMPULSORY | Tue, Apr 15th 2359 counted for participation‎</a> <a class="nav-link py-1" href="#2-submit-feedback-for-tutors">2 Submit feedback for tutors‎</a> <a class="nav-link py-1" href="#3-submit-final-peer-evaluation-on-teammates-thu-apr-10th-2359-counted-for-participation">3 Submit final peer evaluation on TEAMMATES  Thu, Apr 10th 2359 counted for participation‎</a></nav> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#session-final-peer-evaluation">Session: Final Peer Evaluation‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#4-submit-the-pe-readiness-quiz-before-the-pe-counted-for-participation">4 Submit the PE-Readiness Quiz  before the PE counted for participation‎</a></nav></nav><!--]--><!--v-if--></nav></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+ --><!----></span></span><a class="fa fa-anchor" href="#4-submit-the-pe-readiness-quiz-before-the-pe-counted-for-participation" onclick="event.stopPropagation()"></a></h4> <div><ul><li>Submit this quiz (on Canvas) to confirm that you know important details about the PE.</li></ul></div> <p></p> <div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"><nav id="mb-page-nav" class="nav nav-pills flex-column my-0 small no-flex-wrap" data-v-6b1b63d2><!--[--><a class="nav-link py-1" href="#week-12-mon-apr-7th-admin">Week 12 [Mon, Apr 7th] - Admin‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#1-submit-the-declaration-about-code-reuse-compulsory-tue-apr-15th-2359-counted-for-participation">1 Submit the declaration about code reuse  COMPULSORY | Tue, Apr 15th 2359 counted for participation‎</a> <a class="nav-link py-1" href="#2-submit-feedback-for-tutors">2 Submit feedback for tutors‎</a> <a class="nav-link py-1" href="#3-submit-final-peer-evaluation-on-teammates-thu-apr-10th-2359-counted-for-participation">3 Submit final peer evaluation on TEAMMATES  Thu, Apr 10th 2359 counted for participation‎</a></nav> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#session-final-peer-evaluation">Session: Final Peer Evaluation‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#4-submit-the-pe-readiness-quiz-before-the-pe-counted-for-participation">4 Submit the PE-Readiness Quiz  before the PE counted for participation‎</a></nav></nav><!--]--><!--v-if--></nav></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -232,7 +256,8 @@ You may omit this question for members who have not submitted the <a href="/cs21
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -242,7 +267,7 @@ You may omit this question for members who have not submitted the <a href="/cs21
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -253,8 +278,10 @@ You may omit this question for members who have not submitted the <a href="/cs21
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -268,17 +295,21 @@ You may omit this question for members who have not submitted the <a href="/cs21
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>

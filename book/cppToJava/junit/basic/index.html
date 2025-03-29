@@ -39,6 +39,8 @@
 </span><span>    }
 </span><span>}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -54,9 +56,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -72,6 +77,7 @@
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p>Here&#39;s a <code class="line-numbers hljs inline no-lang">IntPairTest</code> class to match (using JUnit 5).</p> <pre><code class="line-numbers hljs java"><span><span class="hljs-keyword">import</span> org.junit.jupiter.api.Test;
 </span><span>
@@ -108,6 +114,8 @@
 </span><span>    }
 </span><span>}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -123,9 +131,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -142,12 +153,13 @@
 </svg>
 
     </div>
+    </div>
     </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <ul><li>Note how each test method is marked with a <code class="line-numbers hljs inline no-lang">@Test</code> annotation.</li> <li>Tests use <code class="line-numbers hljs inline no-lang">assertEquals(expected, actual)</code> methods (provided by JUnit) to compare the expected output with the actual output. If they do not match, the test will fail.<br>
 JUnit comes with other similar methods such as <code class="line-numbers hljs inline no-lang">assertNull</code>, <code class="line-numbers hljs inline no-lang">assertNotNull</code>, <code class="line-numbers hljs inline no-lang">assertTrue</code>, <code class="line-numbers hljs inline no-lang">assertFalse</code> etc. [<a href="https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html">more ...</a>]</li> <li>Java code normally use camelCase for method names e.g., <code class="line-numbers hljs inline no-lang">testStringConversion</code> but when writing test methods, sometimes another convention is used:<br> <code class="line-numbers hljs inline no-lang">unitBeingTested_descriptionOfTestInputs_expectedOutcome</code><br>
 e.g., <code class="line-numbers hljs inline no-lang">intDivision_zeroDivisor_exceptionThrown</code></li> <li>There are <a href="https://howtodoinjava.com/junit5/expected-exception-example/">several ways to verify the code throws the correct exception</a>. The second test method in the example above shows one of the simpler methods. If the exception is thrown, it will be caught and further verified inside the <code class="line-numbers hljs inline no-lang">catch</code> block. But if it is not thrown as expected, the test will reach <code class="line-numbers hljs inline no-lang">fail()</code> line and will fail as a result.</li></ul> <p><strong>What to test for when writing tests?</strong> While <em>test case design techniques</em> is a separate topic altogether, it should be noted that the goal of these tests is to catch bugs in the code. Therefore, test using inputs that can trigger a potentially buggy path in the code. Another way to approach this is, to write tests such that if a future developer modified the method to unintentionally introduce a bug into it, at least one of the test should fail (thus alerting that developer to the mistake immediately).</p> <div class="alert box-container alert-default" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example above, the <code class="line-numbers hljs inline no-lang">IntPairTest</code> class tests the <code class="line-numbers hljs inline no-lang">IntPair#intDivision(int, int)</code> method using several inputs, some even seemingly attempting to &#39;trick&#39; the method into producing a wrong result. If the method still produces the correct output for such &#39;tricky&#39; inputs (as well as &#39;normal&#39; outputs), we can have a higher confidence on the method being correctly implemented.<br>
 However, also note that the current test cases do not (but probably should) test for the inputs (<code class="line-numbers hljs inline no-lang">0, 0</code>), to confirm that it throws the expected exception.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <div><div><br> <h5 id="resources"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:<a class="fa fa-anchor" href="#resources" onclick="event.stopPropagation()"></a></h5> <div><ul><li><strong>Recommended:</strong> <a href="https://se-education.org/guides/tutorials/junit.html">JUnit tutorial @se-edu/guides</a> explains how to use JUnit in your Java project.</li> <li><a href="https://junit.org/junit5/docs/current/user-guide/">JUnit Official User Guide</a></li> <li><a href="https://devqa.io/junit-5-annotations/">JUnit 5 Tutorial – Common Annotations With Examples</a> - a short tutorial</li> <li>How to test private methods in Java?
 [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ]
-[ <a href="http://www.artima.com/suiterunner/private.html">long answer</a> ]</li></ul></div></div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+[ <a href="http://www.artima.com/suiterunner/private.html">long answer</a> ]</li></ul></div></div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -186,7 +198,8 @@ However, also note that the current test cases do not (but probably should) test
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -196,7 +209,7 @@ However, also note that the current test cases do not (but probably should) test
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -207,8 +220,10 @@ However, also note that the current test cases do not (but probably should) test
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -222,17 +237,21 @@ However, also note that the current test cases do not (but probably should) test
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>

@@ -30,6 +30,8 @@ Is publishing submissions unfair to the author? We don&#39;t think so. If you we
 <ul><li>Mention in the Developer Guide (under the <em>Acknowledgements</em> section)</li> <li>Mention in <span class="trigger-click" tabindex="0"><span><!--[-->Project Portfolio Page<!--]--></span></span> if the library has a significant relevance to the features you implemented.</li></ul></li></ul> <p>If you <strong>reused code snippets found on the Internet</strong> <span class="dimmed">e.g. from StackOverflow answers</span> or<br> <strong>referred code in another software</strong> or<br> <strong>referred project code by current/past student</strong>:</p> <ul><li>If you read the code to understand the approach and implemented it yourself, mention it as a comment<br> <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment"><span>//Solution below <span class="highlighted">inspired</span> by https://stackoverflow.com/a/16252290</span></span>
 </span><span>{Your implementation of the reused solution here ...}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -45,9 +47,12 @@ Is publishing submissions unfair to the author? We don&#39;t think so. If you we
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -63,10 +68,13 @@ Is publishing submissions unfair to the author? We don&#39;t think so. If you we
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></li> <li>If you copy-pasted code from elsewhere but modified it significantly, mention it as a comment<br> <span><span aria-hidden="true" class="fas fa-cube"></span></span> Example:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment"><span>//Solution below <span class="highlighted">adapted</span> from https://stackoverflow.com/a/16252290</span></span>
 </span><span>{Your implementation of the reused solution here ...}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -82,9 +90,12 @@ Is publishing submissions unfair to the author? We don&#39;t think so. If you we
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -100,6 +111,7 @@ Is publishing submissions unfair to the author? We don&#39;t think so. If you we
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></li> <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed">renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using <span class="trigger-click" tabindex="0"><span><!--[--><code class="line-numbers hljs inline no-lang">@@author</code> tags<!--]--></span></span> with the <mark><code class="line-numbers hljs inline no-lang">-reused</code></mark> suffix)<br>
 Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment"><span>//<span class="highlighted">@@author</span> {yourGithubUsername}-reused</span></span>
@@ -109,6 +121,8 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 </span><span><span class="hljs-function"></span>
 </span><span><span class="hljs-function"><span class="hljs-comment"><span>//<span class="highlighted">@@author</span></span></span></span>
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -124,9 +138,12 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -142,6 +159,7 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example of reusing a code snippet (with minor modifications):<pre><code class="line-numbers hljs java"><span>persons = getList()
 </span><span><span class="hljs-comment"><span>//<span class="highlighted">@@author</span> johndoe-reused</span></span>
@@ -156,6 +174,8 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 </span><span><span class="hljs-comment"><span>//<span class="highlighted">@@author</span></span></span>
 </span><span><span class="hljs-keyword">return</span> persons;
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -171,9 +191,12 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -190,8 +213,9 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 </svg>
 
     </div>
+    </div>
     </button></div></pre></li></ul> <div tags="m--cs2103"><p><strong>Giving credit for reused images</strong> (and other media assets): Ideally, the source should be credited where the asset appears. For example, if you reused an image in your GUI, you can credit the source where a screenshot of the GUI showing that image appears first in your user guide. In addition, you can also acknowledge the sources in your GitHub project&#39;s landing page (e.g., <code class="line-numbers hljs inline no-lang">README.md</code>)</p> <p><strong>Giving credit to AB3 code</strong>: If your team project code follows a design similar to AB3, that doesn&#39;t mean you need to credit AB3 -- this is because a brownfield project is <em>expected</em> to follow existing code/design where possible, in the interest of consistency. This type of reuse need not be acknowledged/credited specifically.</p> <p><strong>Giving credit to AB4 code</strong>: If you reused any code from <a href="https://github.com/se-edu/addressbook-level4/">AB4</a>, cite it as you would cite reuse from any other external source.</p></div> <p><strong>Giving credit for reusing from course materials</strong> (e.g., course textbook, tutorials, instructional resources from se-education.org) is not required, although you are welcome to do so. Reason: Those materials were created by the teaching team for you to use/reuse.</p> <p><strong>Reuse within the team</strong> <span class="dimmed">(e.g., reusing code written by a team member)</span> need not be mentioned explicitly. However, you should factor in such reuse when you estimate effort contributed by each team member.</p> <p><strong>Reuse of documentation</strong> <span class="dimmed">(e.g., reusing a UG/DG section)</span> is no different from code reuse. Such reuse should be credited as well.</p> <p><strong>Citing the use of AI-generated/assisted work</strong> <span class="dimmed">(e.g., using GitHub Copilot for project work)</span>:</p> <ul><li>If the use of the tool was localized into a few places <span class="dimmed">(e.g., used it to write a few methods/classes only)</span>, cite its use in comments near where you used it.</li> <li>If the use was more widespread <span class="dimmed">(e.g., used it as an auto-complete tool during most of your coding)</span>, cite the usage (i.e., which tool, who used it, the extent of use) in the following location instead (i.e., no need to cite in code comments):
-<ul><li>iP: in the README file</li> <li>tP: in the DG, under the Acknowledgements section</li></ul></li></ul><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--></div></div></div> <div id="policy-feedbackOnProjectWork"><h3 id="policy-on-feedback-for-project-work">Policy on feedback for project work <small><small><span class="badge rounded-pill bg-light text-warning"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#policy-on-feedback-for-project-work" onclick="event.stopPropagation()"></a></h3> <div class="indented"><div><p><strong>The teaching team will not give ad-hoc feedback on project work connected to a component yet to be graded.</strong> For example, if you were to ask your tutor for feedback on your individual or team project feature design, the tutor is not allowed to give feedback. Similarly, if you are faced with a design decision in your project, a tutor will not make that decision for you.</p> <div class="card-container algolia-no-index" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><span class="card-title"><div><p><span class="badge rounded-pill bg-info"><span><span aria-hidden="true" class="far fa-question"></span> FAQ</span></span> <span>Why are tutors not allowed to give feedback on project deliverables?</span></p></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><!----><hr style="" data-v-1f482349></div><!----></div></div> <p></p> <div class="card-container algolia-no-index" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><span class="card-title"><div><p><span class="badge rounded-pill bg-info"><span><span aria-hidden="true" class="far fa-question"></span> FAQ</span></span> <span>Huh? If tutors are not giving feedback on project deliverables, how can we improve our project work?</span></p></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><!----><hr style="" data-v-1f482349></div><!----></div></div> <p></p> <p><strong>You can still use the <a href="https://github.com/nus-cs2103-AY2425S2/forum/issues">course forum</a> to seek feedback on a specific aspect of your project</strong> where a professor can answer the question in a general way that&#39;s not unfair to other teams (and other teams can benefit from the answer as well).<br> <strong>Alternatively, you can send your question to <code class="line-numbers hljs inline no-lang">cs2103@comp.nus.edu.sg</code>.</strong></p></div></div></div> <div id="policy-outsiderHelp"><h3 id="policy-on-help-from-outsiders">Policy on help from outsiders <small><small><span class="badge rounded-pill bg-light text-warning"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#policy-on-help-from-outsiders" onclick="event.stopPropagation()"></a></h3> <div class="indented"><div><p>In general, you are <strong>not allowed to involve outsiders</strong> in your project except your team members and the teaching team. However, It is OK to give your product to others for the purpose of getting voluntary user feedback. It is also OK to learn from others as long as they don&#39;t do your project work themselves.</p></div></div></div> <div id="policy-deadlineExtensions"><h3 id="policy-on-deadline-extensions-optional">Policy on deadline extensions <small><small><span class="badge rounded-pill bg-success"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span>: OPTIONAL</span></small></small><a class="fa fa-anchor" href="#policy-on-deadline-extensions-optional" onclick="event.stopPropagation()"></a></h3> <div class="indented"><div><p>The ability to meet deadlines is a learning outcome of this course. Therefore, <strong>we do not normally extend course deadlines</strong> to accommodate those who missed the deadline, unless there are some extraordinary circumstances.</p> <p>However, weekly project deliverables without specific deadlines are flexible. You will not be penalized for missing them if you catch up within a few days.</p></div></div></div></div> <br> <p><span class="float-start algolia-no-index"><a class="badge bg-light text-dark" href="/cs2103-website/admin/appendixA-principles.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Apdx A: Course Principles</span></a></span><span class="float-end algolia-no-index"><a class="badge bg-light text-dark" href="/cs2103-website/admin/appendixC-faq.html"><span>Apdx C: FAQ <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></a></span></p></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"><nav id="mb-page-nav" class="nav nav-pills flex-column my-0 small no-flex-wrap" data-v-6b1b63d2><!--[--><a class="nav-link py-1" href="#apdx-b-course-policies">Apdx B: Course Policies ‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#policy-on-admin-questions">Policy on admin questions ‎</a> <a class="nav-link py-1" href="#policy-on-following-instructions">Policy on following instructions ‎</a> <a class="nav-link py-1" href="#policy-on-grading-smaller-larger-teams-optional">Policy on grading smaller/larger teams : OPTIONAL‎</a> <a class="nav-link py-1" href="#policy-on-project-work-distribution">Policy on project work distribution ‎</a> <a class="nav-link py-1" href="#policy-on-absence-due-to-valid-reasons-e-g-mc-loa-university-events-optional">Policy on absence due to valid reasons (e.g. MC, LOA, University events) : OPTIONAL‎</a> <a class="nav-link py-1" href="#policy-on-email-response-time">Policy on email response time ‎</a> <a class="nav-link py-1" href="#policy-on-tech-help">Policy on tech help ‎</a> <a class="nav-link py-1" href="#policy-on-publishing-submissions-optional">Policy on publishing submissions : OPTIONAL‎</a> <a class="nav-link py-1" href="#policy-on-plagiarism">Policy on plagiarism ‎</a> <a class="nav-link py-1" href="#policy-on-reuse">Policy on reuse ‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#giving-credit-for-reused-work">Giving credit for reused work‎</a></nav> <a class="nav-link py-1" href="#policy-on-feedback-for-project-work">Policy on feedback for project work ‎</a> <a class="nav-link py-1" href="#policy-on-help-from-outsiders">Policy on help from outsiders ‎</a> <a class="nav-link py-1" href="#policy-on-deadline-extensions-optional">Policy on deadline extensions : OPTIONAL‎</a></nav><!--]--><!--v-if--></nav></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+<ul><li>iP: in the README file</li> <li>tP: in the DG, under the Acknowledgements section</li></ul></li></ul><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--></div></div></div> <div id="policy-feedbackOnProjectWork"><h3 id="policy-on-feedback-for-project-work">Policy on feedback for project work <small><small><span class="badge rounded-pill bg-light text-warning"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#policy-on-feedback-for-project-work" onclick="event.stopPropagation()"></a></h3> <div class="indented"><div><p><strong>The teaching team will not give ad-hoc feedback on project work connected to a component yet to be graded.</strong> For example, if you were to ask your tutor for feedback on your individual or team project feature design, the tutor is not allowed to give feedback. Similarly, if you are faced with a design decision in your project, a tutor will not make that decision for you.</p> <div class="card-container algolia-no-index" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><span class="card-title"><div><p><span class="badge rounded-pill bg-info"><span><span aria-hidden="true" class="far fa-question"></span> FAQ</span></span> <span>Why are tutors not allowed to give feedback on project deliverables?</span></p></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><!----><hr style="" data-v-1f482349></div><!----></div></div> <p></p> <div class="card-container algolia-no-index" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><span class="card-title"><div><p><span class="badge rounded-pill bg-info"><span><span aria-hidden="true" class="far fa-question"></span> FAQ</span></span> <span>Huh? If tutors are not giving feedback on project deliverables, how can we improve our project work?</span></p></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><!----><hr style="" data-v-1f482349></div><!----></div></div> <p></p> <p><strong>You can still use the <a href="https://github.com/nus-cs2103-AY2425S2/forum/issues">course forum</a> to seek feedback on a specific aspect of your project</strong> where a professor can answer the question in a general way that&#39;s not unfair to other teams (and other teams can benefit from the answer as well).<br> <strong>Alternatively, you can send your question to <code class="line-numbers hljs inline no-lang">cs2103@comp.nus.edu.sg</code>.</strong></p></div></div></div> <div id="policy-outsiderHelp"><h3 id="policy-on-help-from-outsiders">Policy on help from outsiders <small><small><span class="badge rounded-pill bg-light text-warning"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#policy-on-help-from-outsiders" onclick="event.stopPropagation()"></a></h3> <div class="indented"><div><p>In general, you are <strong>not allowed to involve outsiders</strong> in your project except your team members and the teaching team. However, It is OK to give your product to others for the purpose of getting voluntary user feedback. It is also OK to learn from others as long as they don&#39;t do your project work themselves.</p></div></div></div> <div id="policy-deadlineExtensions"><h3 id="policy-on-deadline-extensions-optional">Policy on deadline extensions <small><small><span class="badge rounded-pill bg-success"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span><span class="glyphicon glyphicon-flash" aria-hidden="true"></span>: OPTIONAL</span></small></small><a class="fa fa-anchor" href="#policy-on-deadline-extensions-optional" onclick="event.stopPropagation()"></a></h3> <div class="indented"><div><p>The ability to meet deadlines is a learning outcome of this course. Therefore, <strong>we do not normally extend course deadlines</strong> to accommodate those who missed the deadline, unless there are some extraordinary circumstances.</p> <p>However, weekly project deliverables without specific deadlines are flexible. You will not be penalized for missing them if you catch up within a few days.</p></div></div></div></div> <br> <p><span class="float-start algolia-no-index"><a class="badge bg-light text-dark" href="/cs2103-website/admin/appendixA-principles.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> Apdx A: Course Principles</span></a></span><span class="float-end algolia-no-index"><a class="badge bg-light text-dark" href="/cs2103-website/admin/appendixC-faq.html"><span>Apdx C: FAQ <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></a></span></p></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"><nav id="mb-page-nav" class="nav nav-pills flex-column my-0 small no-flex-wrap" data-v-6b1b63d2><!--[--><a class="nav-link py-1" href="#apdx-b-course-policies">Apdx B: Course Policies ‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#policy-on-admin-questions">Policy on admin questions ‎</a> <a class="nav-link py-1" href="#policy-on-following-instructions">Policy on following instructions ‎</a> <a class="nav-link py-1" href="#policy-on-grading-smaller-larger-teams-optional">Policy on grading smaller/larger teams : OPTIONAL‎</a> <a class="nav-link py-1" href="#policy-on-project-work-distribution">Policy on project work distribution ‎</a> <a class="nav-link py-1" href="#policy-on-absence-due-to-valid-reasons-e-g-mc-loa-university-events-optional">Policy on absence due to valid reasons (e.g. MC, LOA, University events) : OPTIONAL‎</a> <a class="nav-link py-1" href="#policy-on-email-response-time">Policy on email response time ‎</a> <a class="nav-link py-1" href="#policy-on-tech-help">Policy on tech help ‎</a> <a class="nav-link py-1" href="#policy-on-publishing-submissions-optional">Policy on publishing submissions : OPTIONAL‎</a> <a class="nav-link py-1" href="#policy-on-plagiarism">Policy on plagiarism ‎</a> <a class="nav-link py-1" href="#policy-on-reuse">Policy on reuse ‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#giving-credit-for-reused-work">Giving credit for reused work‎</a></nav> <a class="nav-link py-1" href="#policy-on-feedback-for-project-work">Policy on feedback for project work ‎</a> <a class="nav-link py-1" href="#policy-on-help-from-outsiders">Policy on help from outsiders ‎</a> <a class="nav-link py-1" href="#policy-on-deadline-extensions-optional">Policy on deadline extensions : OPTIONAL‎</a></nav><!--]--><!--v-if--></nav></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -230,7 +254,8 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -240,7 +265,7 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -251,8 +276,10 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -266,17 +293,21 @@ Format:<pre><code class="line-numbers hljs java"><span><span class="hljs-comment
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>

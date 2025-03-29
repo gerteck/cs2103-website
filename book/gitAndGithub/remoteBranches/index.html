@@ -16,6 +16,8 @@
 </span></strong></span></p> <div id="title-and-body"><div><h4 id="working-with-remote-branches"><span>Working with remote branches</span><a class="fa fa-anchor" href="#working-with-remote-branches" onclick="event.stopPropagation()"></a></h4></div> <div id="main"><div><p><strong>Git branches in a local repo can be <em>linked</em> to a branch in a remote repo</strong> so the local branch can &#39;track&#39; the corresponding remote branch, and revision history contained in the local and the remote branch pair can be synchronized as desired.</p> <div id="pushing-a-new-branch"><p><strong><strong>[A] Pushing a new branch to a remote repo</strong></strong></p> <p>Let&#39;s see how you can push a branch that you created in your local repo to the remote repo. Note that this branch does not exist in the remote repo yet.</p> <p>Given below is how to push a branch named <code class="line-numbers hljs inline no-lang">add-intro</code> to your own fork named <code class="line-numbers hljs inline no-lang">samplerepo-pr-practice</code>.</p> <p>We assume that your local repo already has the remote added to it with the name <code class="line-numbers hljs inline no-lang">origin</code>. If that is not the case, you should first <span class="trigger-click" tabindex="0"><span><!--[-->configure your local repo to be able to communicate with the target remote repo<!--]--></span></span>.</p> <!--[--><!-- NavBar has z-index of 1000, hence the z-index here should exceed that --><!-- SSR property is required for the snapshot tests to work --><!----><!--]--> <div class="printable-tabs" data-v-d4856fc0><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-d4856fc0><!--[--><!--]--></ul><div class="tab-content" data-v-d4856fc0><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->Sourcetree<!--]--></div></div><!--[--> <div><ol><li>Click on <code class="line-numbers hljs inline no-lang">Push</code> button, which opens up the Push dialog.</li> <li>Choose the remote that you wish to push the branch (assuming you&#39;ve added that repo to your Sourcetree already).</li> <li>Select the branch(es) you want to push -- in this case, <code class="line-numbers hljs inline no-lang">add-intro</code>.<br>
 Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox is ticked for the selected branch(es).</li> <li>Click <code class="line-numbers hljs inline no-lang">Push</code>.</li></ol> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/remoteBranches/images/pushBranchToFork.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span> <p></p></div><!--]--><hr data-v-720ba04a></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide algolia-no-index" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->CLI<!--]--></div></div><!--[--> <div><pre><code class="no-line-numbers hljs"><span>$ git push -u origin add-intro
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -31,9 +33,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -49,10 +54,13 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p>The <code class="line-numbers hljs inline no-lang">-u</code> (or <code class="line-numbers hljs inline no-lang">--set-upstream</code>) flag tells Git that you wish the local branch to &#39;track&#39; the remote branch that will be created as a result of this push.</p> <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> See <a href="https://git-scm.com/docs/git-push">git-scm.com/docs/git-push</a> for details of the <code class="line-numbers hljs inline no-lang">push</code> command.</p></div><!--]--><hr data-v-720ba04a></div><!--]--></div></div></div> <div id="pulling-a-new-branch"><p><strong><strong>[B] Pulling a remote branch for the first time</strong></strong></p> <p>Here, let&#39;s see how to fetch a new branch (i.e., it does not exist in your local repo yet) from a remote repo.</p> <div class="printable-tabs" data-v-d4856fc0><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-d4856fc0><!--[--><!--]--></ul><div class="tab-content" data-v-d4856fc0><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->Sourcetree<!--]--></div></div><!--[--> <div><p><strong>1. Check the list of remote branches</strong> by expanding the <code class="line-numbers hljs inline no-lang">REMOTES</code> menu on the left edge of Sourcetree. If the branch you expected to find is missing, you can click the <code class="line-numbers hljs inline no-lang">Fetch</code> button (in the top toolbar) to refresh the information shown under remotes.</p> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/remoteBranches/images/listRemoteBranches.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span> <p></p> <p><strong>2. Double-click the branch name</strong> (e.g., <code class="line-numbers hljs inline no-lang">tweak-requirements</code> branch in the <code class="line-numbers hljs inline no-lang">myfork</code> remote), which should open the checkout dialog shown below.</p> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/remoteBranches/images/checkoutBranchDialog.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span> <p></p> <p><strong>3. Go with the default settings</strong> (shown above) should be fine. Once you click <code class="line-numbers hljs inline no-lang">OK</code>, the branch will appear in your local repo. Furthermore, that repo will switch to that branch, and the local branch will <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
  --><!----></span> the remote branch as well.</p></div><!--]--><hr data-v-720ba04a></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide algolia-no-index" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->CLI<!--]--></div></div><!--[--> <div><p><strong>1. Fetch details from the remote.</strong> e.g., if the remote is named <code class="line-numbers hljs inline no-lang">myfork</code></p> <pre><code class="no-line-numbers hljs"><span>$ git fetch myfork
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -68,9 +76,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -86,9 +97,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><strong>2. List the branches</strong> to see the name of the branch you want to pull.</p> <pre><code class="no-line-numbers hljs"><span>$ git branch -a
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -104,9 +118,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -122,11 +139,14 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="no-line-numbers hljs"><span>master
 </span><span>remotes/myfork/master
 </span><span>remotes/myfork/branch1
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -142,9 +162,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -160,9 +183,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><code class="line-numbers hljs inline no-lang">-a</code> flag tells Git to list both local and remote branches.</p> <p><strong>3. Create a matching local branch and switch to it.</strong></p> <pre><code class="no-line-numbers hljs"><span>$ git switch -c branch1 myfork/branch1
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -178,9 +204,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -196,10 +225,13 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="no-line-numbers hljs"><span>Switched to a new branch &#39;branch1&#39;
 </span><span>branch &#39;branch1&#39; set up to track &#39;myfork/branch1&#39;.
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -215,9 +247,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -233,9 +268,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><code class="line-numbers hljs inline no-lang">-c</code> flag tells Git to create a new local branch.</p></div><!--]--><hr data-v-720ba04a></div><!--]--></div></div></div> <div id="syncing-branches"><p><strong><strong>[C] Syncing branches</strong></strong></p> <p>In this section we assume that you have a local branch that is already tracking a remote branch (e.g., as a result of doing [A] or [B] above).</p> <p><strong>[C1] To push new changes in the local branch to the corresponding remote branch:</strong></p> <div class="printable-tabs" data-v-d4856fc0><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-d4856fc0><!--[--><!--]--></ul><div class="tab-content" data-v-d4856fc0><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->Sourcetree<!--]--></div></div><!--[--> <div><p>Similar to how you pushed a new branch (in [A]):</p> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/remoteBranches/images/pushBranchToFork.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span> <p></p></div><!--]--><hr data-v-720ba04a></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide algolia-no-index" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->CLI<!--]--></div></div><!--[--> <div><p>Similar to [A] above, but omit the <code class="line-numbers hljs inline no-lang">-u</code> flag. e.g.,</p> <pre><code class="no-line-numbers hljs"><span>$ git push origin add-intro
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -251,9 +289,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -269,9 +310,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></div><!--]--><hr data-v-720ba04a></div><!--]--></div></div> <div class="alert box-container seamless" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-info" style="" data-v-baabc8e2><!--[--><i class="fas fa-info" data-v-baabc8e2></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-info vertical-divider" aria-hidden="true" data-v-baabc8e2></div><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><strong>If you push but the remote branch has new commits that you don&#39;t have locally</strong>, Git will abort the push and will ask you to pull first.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>[C2] To pull new changes from a remote branch to the corresponding local branch:</strong></p> <div class="printable-tabs" data-v-d4856fc0><!-- Nav tabs --><ul class="nav-tabs nav nav-tabs d-print-none" role="tablist" data-v-d4856fc0><!--[--><!--]--></ul><div class="tab-content" data-v-d4856fc0><!--[--><div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->Sourcetree<!--]--></div></div><!--[--> <div><p><strong>1. Switch to the branch you want to update</strong> by double-clicking the branch name. e.g.,</p> <span class="image-wrapper" eager><img src="/cs2103-website/book/gitAndGithub/branch/images/sourcetree_3.png" width="" height="" loading="eager" class="img-fluid rounded"><span class="image-caption"><!--[--><!--]--></span></span> <p></p> <p><strong>2. Pull the updated in the remote branch to the local branch</strong> by right-clicking on the branch name (in the same place as above), and choosing <code class="line-numbers hljs inline no-lang">Pull &lt;remote&gt;/&lt;branch&gt; (tracked)</code> e.g., <code class="line-numbers hljs inline no-lang">Pull myfork/add-intro (tracked)</code>.</p></div><!--]--><hr data-v-720ba04a></div> <div role="tabpanel" class="tab-pane active printable-tab-pane tab-pane-hide algolia-no-index" data-v-720ba04a><div class="nav-tabs printable-tab-header" data-v-720ba04a><div class="nav-link active" data-v-720ba04a><!--[-->CLI<!--]--></div></div><!--[--> <div><p><strong>1. Switch to the branch you want to update</strong> using <code class="line-numbers hljs inline no-lang">git checkout &lt;branch&gt;</code> e.g.,</p> <pre><code class="no-line-numbers hljs"><span>$ git checkout branch1
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -287,9 +331,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -305,9 +352,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><strong>2. Pull the updated in the remote branch to the local branch</strong>, using <code class="line-numbers hljs inline no-lang">git pull &lt;remote&gt; &lt;branch&gt;</code> e.g.,</p> <pre><code class="no-line-numbers hljs"><span>$ git pull origin branch1
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -323,9 +373,12 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -342,7 +395,8 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 </svg>
 
     </div>
-    </button></div></pre></div><!--]--><hr data-v-720ba04a></div><!--]--></div></div> <div class="alert box-container seamless" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-info" style="" data-v-baabc8e2><!--[--><i class="fas fa-info" data-v-baabc8e2></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-info vertical-divider" aria-hidden="true" data-v-baabc8e2></div><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><strong>If you pull but your local branch has new commits the remote branch doesn&#39;t have</strong>, Git will automatically perform a merge between the local branch and the remote branch.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div></div> <div id="extras"></div></div></div> <div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+    </div>
+    </button></div></pre></div><!--]--><hr data-v-720ba04a></div><!--]--></div></div> <div class="alert box-container seamless" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><div class="icon-wrapper text-info" style="" data-v-baabc8e2><!--[--><i class="fas fa-info" data-v-baabc8e2></i><!--]--></div><!-- Icon -- content divider for seamless boxes without the header attribute --><div class="alert-info vertical-divider" aria-hidden="true" data-v-baabc8e2></div><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><strong>If you pull but your local branch has new commits the remote branch doesn&#39;t have</strong>, Git will automatically perform a merge between the local branch and the remote branch.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <div></div> <div id="extras"></div></div></div> <div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -381,7 +435,8 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -391,7 +446,7 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -402,8 +457,10 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -417,17 +474,21 @@ Ensure the <code class="line-numbers hljs inline no-lang">Track?</code> checkbox
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>

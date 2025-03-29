@@ -23,6 +23,8 @@
 </span><span>    }
 </span><span>}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -38,9 +40,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -56,6 +61,7 @@
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>Package names are written in all lower case</strong> (not camelCase), using the dot as a separator. Packages in the Java language itself begin with <code class="line-numbers hljs inline no-lang">java</code>. or <code class="line-numbers hljs inline no-lang">javax</code>. Companies use their reversed Internet domain name to begin their package names.</p> <div class="alert box-container alert-default" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> For example, <code class="line-numbers hljs inline no-lang">com.foobar.doohickey.util</code> can be the name of a package created by a company with a domain name <code class="line-numbers hljs inline no-lang">foobar.com</code></p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>To use a public <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
  --><!----></span> from outside its package, you must do one of the following:</strong></p> <ol><li><strong>Use the <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
@@ -81,6 +87,8 @@
 </span><span>    }
 </span><span>}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -96,9 +104,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -114,6 +125,7 @@
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p>Note how the class can still use the <code class="line-numbers hljs inline no-lang">Processor</code> without importing it first, by using its fully qualified name <code class="line-numbers hljs inline no-lang">seedu.tojava.logic.Processor</code></p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>Importing a package does not import its sub-packages</strong>, as packages do not behave as hierarchies despite appearances.</p> <div class="alert box-container alert-default" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code class="line-numbers hljs inline no-lang">import seedu.tojava.frontend.*</code> does not import the classes in the sub-package <code class="line-numbers hljs inline no-lang">seedu.tojava.frontend.widget</code>.</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>If you do not use a package statement, your type doesn&#39;t have a package</strong> -- a practice not recommended (except for small code examples) as it is not possible for a type in a package to import a type that is not in a package.</p> <p><strong>Optionally, a <em>static import</em> can be used to import static members of a type</strong> so that the imported members can be used without specifying the type name.</p> <div class="alert box-container alert-default" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The class below uses static imports to import the constant <code class="line-numbers hljs inline no-lang">PREFIX</code> and the method <code class="line-numbers hljs inline no-lang">format()</code> from the <code class="line-numbers hljs inline no-lang">seedu.tojava.util.Formatter</code> class.</p> <pre><code class="line-numbers hljs java"><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.PREFIX;
 </span><span><span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> seedu.tojava.util.Formatter.format;
@@ -128,6 +140,8 @@
 </span><span>    }
 </span><span>}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -143,9 +157,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -162,7 +179,8 @@
 </svg>
 
     </div>
-    </button></div></pre><div class="card-container algolia-no-index" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><p><code class="line-numbers hljs inline no-lang">Formatter</code> class</p><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><!----><hr style="" data-v-1f482349></div><!----></div></div> <p>Note how the class can use <code class="line-numbers hljs inline no-lang">PREFIX</code> and <code class="line-numbers hljs inline no-lang">format()</code> (instead of <code class="line-numbers hljs inline no-lang">Formatter.PREFIX</code> and <code class="line-numbers hljs inline no-lang">Formatter.format()</code>).</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>When using the commandline to compile/run Java, you should take the package into account.</strong></p> <div class="alert box-container alert-default" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the <code class="line-numbers hljs inline no-lang">seedu.tojava.Main</code> class is defined in the file <code class="line-numbers hljs inline no-lang">Main.java</code>,</p> <ul><li>when compiling from the <code class="line-numbers hljs inline no-lang">&lt;source folder&gt;</code>, the command is:<br> <code class="line-numbers hljs inline no-lang">javac seedu/tojava/Main.java</code></li> <li>when running it from the <code class="line-numbers hljs inline no-lang">&lt;compiler output folder&gt;</code>, the command is:<br> <code class="line-numbers hljs inline no-lang">java seedu.tojava.Main</code></li></ul><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <div><div><br> <h5 id="resources"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:<a class="fa fa-anchor" href="#resources" onclick="event.stopPropagation()"></a></h5> <div><ul><li>Oracle&#39;s tutorial on packages: [<a href="https://docs.oracle.com/javase/tutorial/java/concepts/package.html">What is a Package?</a>] [<a href="https://docs.oracle.com/javase/tutorial/java/package/index.html">Creating and Using Packages</a>]</li></ul></div></div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+    </div>
+    </button></div></pre><div class="card-container algolia-no-index" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><p><code class="line-numbers hljs inline no-lang">Formatter</code> class</p><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><!----><hr style="" data-v-1f482349></div><!----></div></div> <p>Note how the class can use <code class="line-numbers hljs inline no-lang">PREFIX</code> and <code class="line-numbers hljs inline no-lang">format()</code> (instead of <code class="line-numbers hljs inline no-lang">Formatter.PREFIX</code> and <code class="line-numbers hljs inline no-lang">Formatter.format()</code>).</p><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><strong>When using the commandline to compile/run Java, you should take the package into account.</strong></p> <div class="alert box-container alert-default" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the <code class="line-numbers hljs inline no-lang">seedu.tojava.Main</code> class is defined in the file <code class="line-numbers hljs inline no-lang">Main.java</code>,</p> <ul><li>when compiling from the <code class="line-numbers hljs inline no-lang">&lt;source folder&gt;</code>, the command is:<br> <code class="line-numbers hljs inline no-lang">javac seedu/tojava/Main.java</code></li> <li>when running it from the <code class="line-numbers hljs inline no-lang">&lt;compiler output folder&gt;</code>, the command is:<br> <code class="line-numbers hljs inline no-lang">java seedu.tojava.Main</code></li></ul><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div> <div><div><br> <h5 id="resources"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:<a class="fa fa-anchor" href="#resources" onclick="event.stopPropagation()"></a></h5> <div><ul><li>Oracle&#39;s tutorial on packages: [<a href="https://docs.oracle.com/javase/tutorial/java/concepts/package.html">What is a Package?</a>] [<a href="https://docs.oracle.com/javase/tutorial/java/package/index.html">Creating and Using Packages</a>]</li></ul></div></div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -201,7 +219,8 @@
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -211,7 +230,7 @@
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -222,8 +241,10 @@
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -237,17 +258,21 @@
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>

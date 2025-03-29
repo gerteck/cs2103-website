@@ -22,6 +22,8 @@ Here is a sample code file:</p> <pre><code class="line-numbers hljs"><span><span
 </span><span><span class="highlighted">//@@author johndoe</span>
 </span><span>method 4 ...
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -37,9 +39,12 @@ Here is a sample code file:</p> <pre><code class="line-numbers hljs"><span><span
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -55,6 +60,7 @@ Here is a sample code file:</p> <pre><code class="line-numbers hljs"><span><span
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></li> <li><p><strong>If you don&#39;t know who wrote the code segment below yours</strong>, you may put an empty <code class="line-numbers hljs inline no-lang">//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
 Here is a sample code with an empty <code class="line-numbers hljs inline no-lang">author</code> tag:</p> <pre><code class="line-numbers hljs"><span>method 0 ...
@@ -65,6 +71,8 @@ Here is a sample code with an empty <code class="line-numbers hljs inline no-lan
 </span><span>method 3 ...
 </span><span>method 4 ...
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -80,9 +88,12 @@ Here is a sample code with an empty <code class="line-numbers hljs inline no-lan
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -98,6 +109,7 @@ Here is a sample code with an empty <code class="line-numbers hljs inline no-lan
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></li> <li><p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
 Here is an example code from an xml/fxml file. This format works for Markdown/MarkBind files as well.</p> <pre><code class="line-numbers hljs"><span><span class="highlighted">&lt;!-- @@author sereneWong --&gt;</span>
@@ -107,6 +119,8 @@ Here is an example code from an xml/fxml file. This format works for Markdown/Ma
 </span><span>&lt;/textbox&gt;
 </span><span>...
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -122,9 +136,12 @@ Here is an example code from an xml/fxml file. This format works for Markdown/Ma
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -140,12 +157,15 @@ Here is an example code from an xml/fxml file. This format works for Markdown/Ma
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></li> <li><p><strong>Do not put the <code class="line-numbers hljs inline no-lang">//@@author</code> inside java header comments</strong>.<br> <span style="color:red;"><span><span aria-hidden="true" class="fas fa-thumbs-down"></span> Bad</span></span></p> <pre><code class="line-numbers hljs"><span>/**
 </span><span>  * Returns true if ...
 </span><span>  <span class="highlighted">* @@author johndoe</span>
 </span><span>  */
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -161,9 +181,12 @@ Here is an example code from an xml/fxml file. This format works for Markdown/Ma
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -179,12 +202,15 @@ Here is an example code from an xml/fxml file. This format works for Markdown/Ma
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><span style="color:green;"><span><span aria-hidden="true" class="fas fa-thumbs-up"></span> Good</span></span></p> <pre><code class="line-numbers hljs"><span><span class="highlighted">//@@author johndoe</span>
 </span><span>/**
 </span><span>  * Returns true if ...
 </span><span>  */
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -200,9 +226,12 @@ Here is an example code from an xml/fxml file. This format works for Markdown/Ma
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -218,6 +247,7 @@ Here is an example code from an xml/fxml file. This format works for Markdown/Ma
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></li></ul> <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate" onclick="event.stopPropagation()"></a></h4> <ul><li><p><strong>Annotate both functional and test code</strong> There is no need to annotate documentation files.</p></li> <li><p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed">e.g., a class, a sequence of methods, a  method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong> but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement.</p> <ul><li>If an enhancement required you to do tiny changes in many places, there is no need to annotate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li> <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as &#39;unclaimed&#39; (i.e., no author tags).</li> <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from somewhere.</li> <li><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li></ul></li> <li><p><strong>Do not try to boost the quantity of your contribution using unethical means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.
 Individual members are responsible for making sure code attributed to them are correct.
@@ -226,6 +256,8 @@ e.g.</li></ul> <pre><code class="line-numbers hljs"><span><span class="highlight
 </span><span>method 1 ...
 </span><span>method 2 ...
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -241,9 +273,12 @@ e.g.</li></ul> <pre><code class="line-numbers hljs"><span><span class="highlight
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -259,12 +294,15 @@ e.g.</li></ul> <pre><code class="line-numbers hljs"><span><span class="highlight
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p>Please put a comment in the code to explain why it was not used.</p></li> <li><p><strong>If you reused code from elsewhere,</strong> mark such code as <code class="line-numbers hljs inline no-lang">//@@author {yourGitHubUsername}-reused</code> (note the suffix <code class="line-numbers hljs inline no-lang">reused</code>)
 e.g.</p> <pre><code class="line-numbers hljs"><span><span class="highlighted">//@@author johndoe-reused</span>
 </span><span>method 1 ...
 </span><span>method 2 ...
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -280,9 +318,12 @@ e.g.</p> <pre><code class="line-numbers hljs"><span><span class="highlighted">//
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -299,7 +340,8 @@ e.g.</p> <pre><code class="line-numbers hljs"><span><span class="highlighted">//
 </svg>
 
     </div>
-    </button></div></pre></li> <li><p><strong>You can use empty <code class="line-numbers hljs inline no-lang">@@author</code> tags to mark code as not yours when RepoSense attribute the code to you incorrectly.</strong></p> <ul><li><p><strong>Code generated by the IDE/framework,</strong> should not be annotated as your own.</p></li> <li><p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These should not be claimed as yours but you can mention these additional contributions in the Project Portfolio page if you want to claim credit for them.</p></li></ul></li></ul></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+    </div>
+    </button></div></pre></li> <li><p><strong>You can use empty <code class="line-numbers hljs inline no-lang">@@author</code> tags to mark code as not yours when RepoSense attribute the code to you incorrectly.</strong></p> <ul><li><p><strong>Code generated by the IDE/framework,</strong> should not be annotated as your own.</p></li> <li><p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These should not be claimed as yours but you can mention these additional contributions in the Project Portfolio page if you want to claim credit for them.</p></li></ul></li></ul></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -338,7 +380,8 @@ e.g.</p> <pre><code class="line-numbers hljs"><span><span class="highlighted">//
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -348,7 +391,7 @@ e.g.</p> <pre><code class="line-numbers hljs"><span><span class="highlighted">//
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -359,8 +402,10 @@ e.g.</p> <pre><code class="line-numbers hljs"><span><span class="highlighted">//
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -374,17 +419,21 @@ e.g.</p> <pre><code class="line-numbers hljs"><span><span class="highlighted">//
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>

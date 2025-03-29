@@ -22,6 +22,8 @@
 </span><span><span class="hljs-keyword">short</span> s = <span class="hljs-number">10000</span>;
 </span><span><span class="hljs-keyword">int</span> i = <span class="hljs-number">100000</span>;
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -37,9 +39,12 @@
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -55,6 +60,7 @@
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><strong>You can use any name starting with a letter, underscore, or $ as a variable name but you cannot use Java <a href="http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html">keywords</a> as variables names.</strong>
 You can display the value of a variable using <code class="line-numbers hljs inline no-lang">System.out.print</code> or <code class="line-numbers hljs inline no-lang">System.out.println</code> (the latter goes to the next line after printing). To output multiple values on the same line, it’s common to use several <code class="line-numbers hljs inline no-lang">print</code> statements followed by <code class="line-numbers hljs inline no-lang">println</code> at the end.</p> <pre><code class="line-numbers hljs java"><span><span class="hljs-keyword">int</span> hour = <span class="hljs-number">11</span>;
@@ -66,6 +72,8 @@ You can display the value of a variable using <code class="line-numbers hljs inl
 </span><span>System.out.println(<span class="hljs-string">&quot;.&quot;</span>); <span class="hljs-comment">//use println here to complete the line</span>
 </span><span>System.out.println(<span class="hljs-string">&quot;done&quot;</span>);
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -81,9 +89,12 @@ You can display the value of a variable using <code class="line-numbers hljs inl
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -99,10 +110,13 @@ You can display the value of a variable using <code class="line-numbers hljs inl
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="line-numbers hljs"><span>The current time is 11:59.
 </span><span>done
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -118,9 +132,12 @@ You can display the value of a variable using <code class="line-numbers hljs inl
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -136,9 +153,12 @@ You can display the value of a variable using <code class="line-numbers hljs inl
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><strong>Use the keyword <code class="line-numbers hljs inline no-lang">final</code> to indicate that the variable value, once assigned, should not be allowed to change later</strong> i.e., act like a ‘constant’. By convention, names for constants are all uppercase, with the underscore character (<code class="line-numbers hljs inline no-lang">_</code>) between words.</p> <pre><code class="line-numbers hljs java"><span><span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> CM_PER_INCH = <span class="hljs-number">2.54</span>;
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -154,9 +174,12 @@ You can display the value of a variable using <code class="line-numbers hljs inl
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -172,12 +195,15 @@ You can display the value of a variable using <code class="line-numbers hljs inl
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre></div> <div><div><br> <h5 id="resources-2"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:<a class="fa fa-anchor" href="#resources-2" onclick="event.stopPropagation()"></a></h5> <div><ul><li><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html">Oracle&#39;s tutorial on variables</a></li> <li><a href="https://www.tutorialspoint.com/java/java_variable_types.htm">A tutorial on variables</a> <span class="dimmed">by tutorialspoint.com</span></li></ul></div></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-1f482349><button type="button" class="collapse-button btn btn-seamless" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-1f482349></div><!----></div></div></div> <div><div class="card-container" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-down" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><span class="card-title"><div><h4 id="operators"><span>Operators</span><a class="fa fa-anchor" href="#operators" onclick="event.stopPropagation()"></a></h4></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><div class="card-body" data-v-1f482349><!--[--><!--[--> <div class="indented"><p><span class="badge bg-light text-dark"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use operators</span></span></span></span></p><p></p><p></p> <p></p> <div><p><strong>Java supports the usual arithmetic operators</strong>, given below.</p> <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead><tr><th>Operator</th> <th>Description</th> <th>Examples</th></tr></thead> <tbody><tr><td><code class="line-numbers hljs inline no-lang">+</code></td> <td>Additive operator</td> <td><code class="line-numbers hljs inline no-lang">2 + 3</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">5</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">-</code></td> <td>Subtraction operator</td> <td><code class="line-numbers hljs inline no-lang">4 - 1</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">3</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">*</code></td> <td>Multiplication operator</td> <td><code class="line-numbers hljs inline no-lang">2 * 3</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">6</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">/</code></td> <td>Division operator</td> <td><mark><code class="line-numbers hljs inline no-lang">5 / 2</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">2</code></mark> but <mark><code class="line-numbers hljs inline no-lang">5.0 / 2</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">2.5</code></mark></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">%</code></td> <td>Remainder operator</td> <td><code class="line-numbers hljs inline no-lang">5 % 2</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">1</code></td></tr></tbody></table></div><p>The following program uses some operators as part of an <em>expression</em> <code class="line-numbers hljs inline no-lang">hour * 60 + minute</code>:</p> <pre><code class="line-numbers hljs java"><span><span class="hljs-keyword">int</span> hour = <span class="hljs-number">11</span>;
 </span><span><span class="hljs-keyword">int</span> minute = <span class="hljs-number">59</span>;
 </span><span>System.out.print(<span class="hljs-string">&quot;Number of minutes since midnight: &quot;</span>);
 </span><span>System.out.println(hour * <span class="hljs-number">60</span> + minute);
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -193,9 +219,12 @@ You can display the value of a variable using <code class="line-numbers hljs inl
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -211,9 +240,12 @@ You can display the value of a variable using <code class="line-numbers hljs inl
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="line-numbers hljs"><span>Number of minutes since midnight: 719
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -229,9 +261,12 @@ You can display the value of a variable using <code class="line-numbers hljs inl
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -247,6 +282,7 @@ You can display the value of a variable using <code class="line-numbers hljs inl
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><span style="opacity:0.5;"><span class="badge rounded-pill bg-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span></span></span> <strong>When an expression has multiple operators, normal <em>operator precedence</em> rules apply</strong>. Furthermore, you can use parentheses to specify a precise precedence.</p> <div class="alert box-container alert-default" style="" data-v-baabc8e2><!--Icon and vertical divider for seamless header box--><!----><div class="header-and-body" data-v-baabc8e2><!-- Header wrapper, not rendered if there is no header attribute --><!----><!-- Body wrapper --><div class="box-body-wrapper" data-v-baabc8e2><!-- icon on the left, not shown if there is a header --><!----><!-- Icon -- content divider for seamless boxes without the header attribute --><!----><!-- Content wrapper --><div class="contents" style="" data-v-baabc8e2><!--[--><p>Examples:</p> <ul><li><code class="line-numbers hljs inline no-lang">4 * 5 - 1</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="line-numbers hljs inline no-lang">19</code> (<code class="line-numbers hljs inline no-lang">*</code> has higher precedence than <code class="line-numbers hljs inline no-lang">-</code>)</li> <li><code class="line-numbers hljs inline no-lang">4 * (5 - 1)</code> <span><span aria-hidden="true" class="fas fa-arrow-right"></span></span> <code class="line-numbers hljs inline no-lang">16</code> (parentheses <code class="line-numbers hljs inline no-lang">(</code> <code class="line-numbers hljs inline no-lang">)</code> have higher precedence than <code class="line-numbers hljs inline no-lang">*</code>)</li></ul><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div> <p><span style="opacity:0.5;"><span class="badge rounded-pill bg-danger"><span><span aria-hidden="true" class="fas fa-not-equal"></span></span></span></span> Java does not allow <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
  --><!----></span>.</p> <p>The <strong>unary operators</strong> require only one operand; they perform various operations such as incrementing/decrementing a value by one, negating an expression, or inverting the value of a boolean.<small><span style="opacity:0.5;"><span class="badge bg-secondary">-- Java Tutorial</span></span></small></p> <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead><tr><th>Operator</th> <th>Description <small><span style="opacity:0.5;"><span class="badge bg-secondary">-- Java Tutorial</span></span></small></th> <th>example</th></tr></thead> <tbody><tr><td><code class="line-numbers hljs inline no-lang">+</code></td> <td>Unary plus operator; indicates positive value<br>(numbers are positive without this, however)</td> <td><code class="line-numbers hljs inline no-lang">x = 5; y = +x</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">y</code> is <code class="line-numbers hljs inline no-lang">5</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">-</code></td> <td>Unary minus operator; negates an expression</td> <td><code class="line-numbers hljs inline no-lang">x = 5; y = -x</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">y</code> is <code class="line-numbers hljs inline no-lang">-5</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">++</code></td> <td>Increment operator; increments a value by 1</td> <td><code class="line-numbers hljs inline no-lang">i = 5; i++</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">i</code> is <code class="line-numbers hljs inline no-lang">6</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">--</code></td> <td>Decrement operator; decrements a value by 1</td> <td><code class="line-numbers hljs inline no-lang">i = 5; i--</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">i</code> is <code class="line-numbers hljs inline no-lang">4</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">!</code></td> <td>Logical complement operator; inverts the value of a boolean</td> <td><code class="line-numbers hljs inline no-lang">foo = true; bar = !foo</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">bar</code> is <code class="line-numbers hljs inline no-lang">false</code></td></tr></tbody></table></div><p><strong>Relational operators</strong> are used to check conditions like whether two values are equal, or whether one is greater than the other. The following expressions show how they are used:</p> <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead><tr><th>Operator</th> <th>Description</th> <th>example <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">true</code></th> <th>example <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">false</code></th></tr></thead> <tbody><tr><td><code class="line-numbers hljs inline no-lang">x == y</code></td> <td><code class="line-numbers hljs inline no-lang">x</code> is equal to <code class="line-numbers hljs inline no-lang">y</code></td> <td><code class="line-numbers hljs inline no-lang">5 == 5</code></td> <td><code class="line-numbers hljs inline no-lang">5 == 6</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">x != y</code></td> <td><code class="line-numbers hljs inline no-lang">x</code> is not equal to <code class="line-numbers hljs inline no-lang">y</code></td> <td><code class="line-numbers hljs inline no-lang">5 != 6</code></td> <td><code class="line-numbers hljs inline no-lang">5 != 5</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">x &gt; y</code></td> <td><code class="line-numbers hljs inline no-lang">x</code> is greater than <code class="line-numbers hljs inline no-lang">y</code></td> <td><code class="line-numbers hljs inline no-lang">7 &gt; 6</code></td> <td><code class="line-numbers hljs inline no-lang">5 &gt; 6</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">x &lt; y</code></td> <td><code class="line-numbers hljs inline no-lang">x</code> is less than <code class="line-numbers hljs inline no-lang">y</code></td> <td><code class="line-numbers hljs inline no-lang">5 &lt; 6</code></td> <td><code class="line-numbers hljs inline no-lang">7 &lt; 6</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">x &gt;= y</code></td> <td><code class="line-numbers hljs inline no-lang">x</code> is greater than or equal to <code class="line-numbers hljs inline no-lang">y</code></td> <td><code class="line-numbers hljs inline no-lang">5 &gt;= 5</code></td> <td><code class="line-numbers hljs inline no-lang">4 &gt;= 5</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">x &lt;= y</code></td> <td><code class="line-numbers hljs inline no-lang">x</code> is less than or equal to <code class="line-numbers hljs inline no-lang">y</code></td> <td><code class="line-numbers hljs inline no-lang">4 &lt;= 5</code></td> <td><code class="line-numbers hljs inline no-lang">6 &lt;= 5</code></td></tr></tbody></table></div><p>The result of a relational operator is a boolean value.</p> <p>Java has three <strong>conditional operators</strong> that are used to operate on boolean values.</p> <div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead><tr><th>Operator</th> <th>Description</th> <th>example <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">true</code></th> <th>example <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">false</code></th></tr></thead> <tbody><tr><td><code class="line-numbers hljs inline no-lang">&amp;&amp;</code></td> <td>and</td> <td><code class="line-numbers hljs inline no-lang">true &amp;&amp; true</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">true</code></td> <td><code class="line-numbers hljs inline no-lang">true &amp;&amp; false</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">false</code></td></tr> <tr><td><code class="line-numbers">||</code></td> <td>or</td> <td><code class="line-numbers">true || false</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">true</code></td> <td><code class="line-numbers">false || false</code> <span class="dimmed"><span><span aria-hidden="true" class="fas fa-arrow-right"></span></span></span> <code class="line-numbers hljs inline no-lang">false</code></td></tr> <tr><td><code class="line-numbers hljs inline no-lang">!</code></td> <td>not</td> <td><code class="line-numbers hljs inline no-lang">not false</code></td> <td><code class="line-numbers hljs inline no-lang">not true</code></td></tr></tbody></table></div></div> <div><div><br> <h5 id="resources-3"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:<a class="fa fa-anchor" href="#resources-3" onclick="event.stopPropagation()"></a></h5> <div><ul><li>Oracle&#39;s tutorial on operators: <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html">part 1</a>, <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html">part 2</a></li> <li><a href="https://www.tutorialspoint.com/java/java_basic_operators.htm">A tutorial on operators</a> <span class="dimmed">by tutorialspoint.com</span></li></ul></div></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-1f482349><button type="button" class="collapse-button btn btn-seamless" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-1f482349></div><!----></div></div></div> <div><div class="card-container" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-down" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><span class="card-title"><div><h4 id="arrays"><span>Arrays</span><a class="fa fa-anchor" href="#arrays" onclick="event.stopPropagation()"></a></h4></div></span><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><div class="card-body" data-v-1f482349><!--[--><!--[--> <div class="indented"><p><span class="badge bg-light text-dark"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use arrays</span></span></span></span></p><p></p><p></p> <p></p> <div><p>Arrays are indicated using square brackets (<code class="line-numbers hljs inline no-lang">[]</code>). To create the array itself, you have to use the <code class="line-numbers hljs inline no-lang">new</code> operator. Here are some example array declarations:</p> <pre><code class="line-numbers hljs java"><span><span class="hljs-keyword">int</span>[] counts;
@@ -258,6 +294,8 @@ You can display the value of a variable using <code class="line-numbers hljs inl
 </span><span>
 </span><span><span class="hljs-keyword">double</span>[] prices = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[size]; <span class="hljs-comment">// declare and create at the same time</span>
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -273,9 +311,12 @@ You can display the value of a variable using <code class="line-numbers hljs inl
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -291,6 +332,7 @@ You can display the value of a variable using <code class="line-numbers hljs inl
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><blockquote>
 Alternatively, you can use the shortcut syntax to create and initialize an array:
@@ -302,6 +344,8 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </span><span>    <span class="hljs-number">700</span>, <span class="hljs-number">800</span>, <span class="hljs-number">900</span>, <span class="hljs-number">1000</span>
 </span><span>};
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -317,9 +361,12 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -335,6 +382,7 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><small><span style="opacity:0.5;"><span class="badge bg-secondary">-- Java Tutorial</span></span></small></p></blockquote> <p><span style="opacity:0.5;"><span class="badge rounded-pill bg-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span></span></span> The <code class="line-numbers hljs inline no-lang">[]</code> operator selects elements from an array. Array elements <span class="trigger" data-mb-component-type="tooltip" tabindex="0"><!----><!-- do not delete this comment, it is for the stray space issue (#2419)
  --><!----></span>.</p> <pre><code class="line-numbers hljs java"><span><span class="hljs-keyword">int</span>[] counts = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
@@ -345,6 +393,8 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </span><span>counts[<span class="hljs-number">1</span>] = counts[<span class="hljs-number">0</span>] * <span class="hljs-number">2</span>;
 </span><span>counts[<span class="hljs-number">2</span>]++; <span class="hljs-comment">// increment value at index 2</span>
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -360,9 +410,12 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -378,11 +431,14 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><span style="opacity:0.5;"><span class="badge rounded-pill bg-danger"><span><span aria-hidden="true" class="fas fa-not-equal"></span></span></span></span> A Java array is aware of its size. A Java array prevents a programmer from indexing the array out of bounds. If the index is negative or not present in the array, the result is an error named <code class="line-numbers hljs inline no-lang">ArrayIndexOutOfBoundsException</code>.</p> <pre><code class="line-numbers hljs java"><span><span class="hljs-keyword">int</span>[] scores = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];
 </span><span>System.out.println(scores.length) <span class="hljs-comment">// prints 4</span>
 </span><span>scores[<span class="hljs-number">5</span>] = <span class="hljs-number">0</span>; <span class="hljs-comment">// causes an exception</span>
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -398,9 +454,12 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -416,11 +475,14 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="line-numbers hljs"><span>4
 </span><span>Exception in thread &quot;main&quot; java.lang.ArrayIndexOutOfBoundsException: 5
 </span><span>    at Main.main(Main.java:6)
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -436,9 +498,12 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -454,6 +519,7 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><span style="opacity:0.5;"><span class="badge rounded-pill bg-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span></span></span> It is also possible to create arrays of more than one dimension:</p> <blockquote><pre><code class="line-numbers hljs java"><span>String[][] names = {
 </span><span>    {<span class="hljs-string">&quot;Mr. &quot;</span>, <span class="hljs-string">&quot;Mrs. &quot;</span>, <span class="hljs-string">&quot;Ms. &quot;</span>},
@@ -463,6 +529,8 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </span><span>System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] + names[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]); <span class="hljs-comment">// Mr. Smith</span>
 </span><span>System.out.println(names[<span class="hljs-number">0</span>][<span class="hljs-number">2</span>] + names[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>]); <span class="hljs-comment">// Ms. Jones</span>
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -478,9 +546,12 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -496,6 +567,7 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><small><span style="opacity:0.5;"><span class="badge bg-secondary">-- Java Tutorial</span></span></small></p></blockquote> <h5 id="passing-arguments-to-a-program">Passing arguments to a program<a class="fa fa-anchor" href="#passing-arguments-to-a-program" onclick="event.stopPropagation()"></a></h5> <p><span style="opacity:0.5;"><span class="badge rounded-pill bg-success"><span><span aria-hidden="true" class="fas fa-equals"></span></span></span></span> The <code class="line-numbers hljs inline no-lang">args</code> parameter of the <code class="line-numbers hljs inline no-lang">main</code> method is an array of Strings containing command line arguments supplied (if any) when running the program.</p> <pre><code class="line-numbers hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span></span>{
 </span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
@@ -503,6 +575,8 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </span><span>    }
 </span><span>}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -518,9 +592,12 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -536,6 +613,7 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p>You can run this program (after compiling it first) from the command line by typing:</p> <p><small><span class="badge bg-secondary">&gt;_</span></small> <code class="line-numbers hljs inline no-lang">java Foo abc</code></p> <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <p><code class="line-numbers hljs inline no-lang">abc</code></p></div> <div><div><br> <h5 id="resources-4"><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources:<a class="fa fa-anchor" href="#resources-4" onclick="event.stopPropagation()"></a></h5> <div><ul><li><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html">Oracle&#39;s tutorial on Arrays</a></li> <li><a href="https://www.tutorialspoint.com/java/java_arrays.htm">A tutorial on Arrays</a> <span class="dimmed">by tutorialspoint.com</span></li> <li><a href="https://www.youtube.com/watch?v=L06uGnF4IpY"><span aria-hidden="true" class="fab fa-youtube"></span> A video tutorial on Arrays</a> <span class="dimmed">by thenewboston</span></li></ul></div></div> <div><br> <h5 id="exercises"><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span></span> Exercises:<a class="fa fa-anchor" href="#exercises" onclick="event.stopPropagation()"></a></h5> <div><div><div class="card-container" data-v-1f482349><div class="card expandable-card border-dark" data-v-1f482349><div class="card-header header-toggle bg-dark border-dark" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><!----></div><div class="header-wrapper card-title bg-dark text-white" data-v-1f482349><!--[--><!--[--><h3 id="key-exercise-compare-names"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] Compare names</small></small><a class="fa fa-anchor" href="#key-exercise-compare-names" onclick="event.stopPropagation()"></a></h3><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><div class="card-body" data-v-1f482349><!--[--><!--[--> <p>Write a Java program that takes two command line arguments and prints <code class="line-numbers hljs inline no-lang">true</code> or <code class="line-numbers hljs inline no-lang">false</code> to indicate if the two arguments have the same value. Follow the sample output given below.</p> <pre><code class="line-numbers hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 </span><span>  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
@@ -543,6 +621,8 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </span><span>  }
 </span><span>}
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -558,9 +638,12 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -576,10 +659,13 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><small><span class="badge bg-secondary">&gt;_</span></small> <code class="line-numbers hljs inline no-lang">java Main adam eve</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="line-numbers hljs"><span>Words given: adam, eve
 </span><span>They are the same: false
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -595,9 +681,12 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -613,10 +702,13 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><small><span class="badge bg-secondary">&gt;_</span></small> <code class="line-numbers hljs inline no-lang">java Main eve eve</code> <span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p> <pre><code class="line-numbers hljs"><span>Words given: eve, eve
 </span><span>They are the same: true
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -632,9 +724,12 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -650,11 +745,14 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     </g>
 </svg>
 
+    </div>
     </div>
     </button></div></pre><p><span class="badge rounded-pill bg-success text-white"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Use the following technique to compare two <code class="line-numbers hljs inline no-lang">Strings</code>(i.e., don&#39;t use <code class="line-numbers hljs inline no-lang">==</code>). <span class="dimmed">Reason: to be covered in a later topic</span>.</p> <pre><code class="line-numbers hljs java"><span>String x = <span class="hljs-string">&quot;foo&quot;</span>;
 </span><span><span class="hljs-keyword">boolean</span> isSame = x.equals(<span class="hljs-string">&quot;bar&quot;</span>) <span class="hljs-comment">// false</span>
 </span><span>isSame = x.equals(<span class="hljs-string">&quot;foo&quot;</span>) <span class="hljs-comment">// true</span>
 </span></code><div class="function-btn-container"><button onclick="copyCodeBlock(this)" class="function-btn d-print-none">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Copy</span>
     <div class="function-btn-body">
     
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
@@ -670,9 +768,12 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none">
+    </div>
+    </button><button onclick="toggleCodeBlockWrap(this)" class="function-btn d-print-none wrap-button">
+    <div class="tooltip-container">
+    <span class="tooltiptext">Wrap Text</span>
     <div class="function-btn-body">
-      
+    
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
       <path id="path17964" d="M 1.109375 0 L 1.109375 2.5351562 L 2.0410156 2.5351562 L
@@ -689,7 +790,8 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 </svg>
 
     </div>
-    </button></div></pre><div class="card-container algolia-no-index" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><p>Hint</p><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><!----><hr style="" data-v-1f482349></div><!----></div></div> <div class="card-container algolia-no-index" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><p>partial solution</p><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><!----><hr style="" data-v-1f482349></div><!----></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-1f482349><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="display:none;" data-v-1f482349></div><!----></div></div></div></div></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-1f482349><button type="button" class="collapse-button btn btn-seamless" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-1f482349></div><!----></div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+    </div>
+    </button></div></pre><div class="card-container algolia-no-index" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><p>Hint</p><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><!----><hr style="" data-v-1f482349></div><!----></div></div> <div class="card-container algolia-no-index" data-v-1f482349><div class="card expandable-card card-seamless border-0" data-v-1f482349><div class="card-header header-toggle bg-transparent border-0" data-v-1f482349><div class="caret-wrapper" data-v-1f482349><span class="glyphicon glyphicon-chevron-right" data-v-1f482349></span></div><div class="header-wrapper-seamless header-wrapper card-title bg-transparent" data-v-1f482349><!--[--><!--[--><p>partial solution</p><!--]--><!--]--></div><div class="button-wrapper" data-v-1f482349><!--[--><button type="button" class="collapse-button btn btn-outline-light" style="display:none;" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down" aria-hidden="true"></span></button><button style="" type="button" class="btn-outline-light seamless-button close-button btn" data-v-1f482349><span class="glyphicon glyphicon-remove" aria-hidden="true" data-v-1f482349></span></button><button style="display:none;" type="button" class="btn-outline-light seamless-button popup-button btn" data-v-1f482349><span class="glyphicon glyphicon-new-window" aria-hidden="true" data-v-1f482349></span></button><!--]--></div></div><div class="card-collapse" data-v-1f482349><!----><hr style="" data-v-1f482349></div><!----></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-1f482349><button type="button" class="collapse-button btn btn-outline-secondary" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="display:none;" data-v-1f482349></div><!----></div></div></div></div></div></div></div><!--]--><!--]--><!----><div class="bottom-button-wrapper" data-v-1f482349><button type="button" class="collapse-button btn btn-seamless" style="" data-v-1f482349><span class="collapse-icon glyphicon glyphicon-menu-down opened" aria-hidden="true"></span></button></div></div><hr style="" data-v-1f482349></div><!----></div></div></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -728,7 +830,8 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -738,7 +841,7 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -749,8 +852,10 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -764,17 +869,21 @@ Alternatively, you can use the shortcut syntax to create and initialize an array
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>

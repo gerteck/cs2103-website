@@ -176,7 +176,7 @@ Also, self-learning how to use tools such as Git, GitHub, Gradle, JUnit etc.,
 from given resources is good practice for future, as such tools are emerge and evolve rapidly.</li></ul><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"><nav id="mb-page-nav" class="nav nav-pills flex-column my-0 small no-flex-wrap" data-v-6b1b63d2><!--[--><a class="nav-link py-1" href="#cs2103-t-mid-semester-survey-followup-ay2425s2">
 CS2103/T Mid-Semester Survey Followup
  [AY2425S2]
-‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#course-briefings-usefulness">Course Briefings - usefulness‎</a> <a class="nav-link py-1" href="#course-briefings-quality">Course Briefings - quality‎</a> <a class="nav-link py-1" href="#weekly-briefings-usefulness">Weekly briefings - usefulness‎</a> <a class="nav-link py-1" href="#weekly-briefings-quality">Weekly briefings - quality‎</a> <a class="nav-link py-1" href="#course-website">Course website‎</a> <a class="nav-link py-1" href="#pre-recorded-topic-videos-usefulness">Pre-recorded topic videos - usefulness‎</a> <a class="nav-link py-1" href="#pre-recorded-topic-videos-quality">Pre-recorded topic videos - quality‎</a> <a class="nav-link py-1" href="#tutorials-quality-in-general">Tutorials quality in general‎</a> <a class="nav-link py-1" href="#the-pace-of-the-course">The pace of the course‎</a> <a class="nav-link py-1" href="#the-workload">The workload‎</a></nav> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#other-comments-concerns">Other comments/concerns‎</a></nav><!--]--><!--v-if--></nav></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Mon, 24 Mar 2025, 13:14:55 GMT+8]</small></div></footer><!--]--></div>
+‎</a> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#course-briefings-usefulness">Course Briefings - usefulness‎</a> <a class="nav-link py-1" href="#course-briefings-quality">Course Briefings - quality‎</a> <a class="nav-link py-1" href="#weekly-briefings-usefulness">Weekly briefings - usefulness‎</a> <a class="nav-link py-1" href="#weekly-briefings-quality">Weekly briefings - quality‎</a> <a class="nav-link py-1" href="#course-website">Course website‎</a> <a class="nav-link py-1" href="#pre-recorded-topic-videos-usefulness">Pre-recorded topic videos - usefulness‎</a> <a class="nav-link py-1" href="#pre-recorded-topic-videos-quality">Pre-recorded topic videos - quality‎</a> <a class="nav-link py-1" href="#tutorials-quality-in-general">Tutorials quality in general‎</a> <a class="nav-link py-1" href="#the-pace-of-the-course">The pace of the course‎</a> <a class="nav-link py-1" href="#the-workload">The workload‎</a></nav> <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap"><a class="nav-link py-1" href="#other-comments-concerns">Other comments/concerns‎</a></nav><!--]--><!--v-if--></nav></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -215,7 +215,8 @@ CS2103/T Mid-Semester Survey Followup
     function copyCodeBlock(element) {
         const pre = element.parentElement.parentElement;
         const codeElement = pre.querySelector('code');
-        const copyButton = element;
+        const copyButtonBody = element.querySelector('.function-btn-body');
+        const tooltipText = element.querySelector(".tooltiptext");
 
         // create dummy text element to select() the text field
         const textElement = document.createElement('textarea');
@@ -225,7 +226,7 @@ CS2103/T Mid-Semester Survey Followup
 
         document.execCommand('copy');
         document.body.removeChild(textElement);
-        copyButton.innerHTML = `
+        copyButtonBody.innerHTML = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="18"
@@ -236,8 +237,10 @@ CS2103/T Mid-Semester Survey Followup
     L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 Z"></path>
   </svg>
 `;
+        console.log("Running tooltip");
+        tooltipText.innerText  = `Copied!`;
         setTimeout(() => {
-            copyButton.innerHTML = `
+            copyButtonBody.innerHTML = `
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18" viewBox="0 0 18 18" version="1.1">
     <g id="surface1">
@@ -251,17 +254,21 @@ CS2103/T Mid-Semester Survey Followup
     </g>
 </svg>
 `;
+            tooltipText.innerText  = `Copy`;
         }, 3000);
     }
     </script>
     <script>
     function toggleCodeBlockWrap(element) {
       const pre = element.parentElement.parentElement;
+      const tooltipText = element.querySelector(".tooltiptext");
       const classList = pre.querySelector('code').classList; 
       if (classList.contains('wrap')) {
           classList.remove('wrap');
+          tooltipText.innerText  = `Wrap Text`;
       } else {
           classList.add('wrap')
+          tooltipText.innerText  = `Unwrap Text`;
       }
     }
     </script>
