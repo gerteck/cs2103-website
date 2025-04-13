@@ -527,7 +527,7 @@
 
     </div>
     </div>
-    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div></div> <div class="indented-less"><h4 id="when-3">When <span class="badge bg-light text-dark"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></font></small></small></span><a class="fa fa-anchor" href="#when-3" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p><strong>It is not necessary to be 100% defensive all the time.</strong> While defensive code may be less prone to be misused or abused, such code can also be more complicated and slower to run.</p> <p>The suitable degree of defensiveness depends on many factors such as:</p> <ul><li>How critical is the system?</li> <li>Will the code be used by programmers other than the author?</li> <li>The level of programming language support for defensive programming</li> <li>The overhead of being defensive</li></ul></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sat, 29 Mar 2025, 17:33:46 GMT+8]</small></div></footer><!--]--></div>
+    </button></div></pre><!--]--></div><!-- dismiss button on the right, not shown if there is a header --><!----></div></div></div></div></div></div> <div class="indented-less"><h4 id="when-3">When <span class="badge bg-light text-dark"><small><small><font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span><span aria-hidden="true" class="glyphicon glyphicon-flash"></span></font></small></small></span><a class="fa fa-anchor" href="#when-3" onclick="event.stopPropagation()"></a></h4> <div class="indented-less"><div><p><strong>It is not necessary to be 100% defensive all the time.</strong> While defensive code may be less prone to be misused or abused, such code can also be more complicated and slower to run.</p> <p>The suitable degree of defensiveness depends on many factors such as:</p> <ul><li>How critical is the system?</li> <li>Will the code be used by programmers other than the author?</li> <li>The level of programming language support for defensive programming</li> <li>The overhead of being defensive</li></ul></div></div></div></div></div></div> <nav id="page-nav" class="fixed-header-padding" data-v-6b1b63d2><!--[--><div class="nav-component slim-scroll"></div><!--]--><!--v-if--></nav> <div class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;" aria-hidden="true"><!--[--><i class="fas fa-arrow-circle-up"></i><!--]--></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.6.0</a>, generated on Sun, 13 Apr 2025, 15:55:32 GMT+8]</small></div></footer><!--]--></div>
 </body><script src="/cs2103-website/markbind/js/bootstrap-utility.min.js"></script>
 <script src="/cs2103-website/markbind/js/polyfill.min.js"></script>
 <script src="/cs2103-website/markbind/js/vue.global.prod.min.js"></script>
@@ -713,12 +713,13 @@
 
   </script>
 
+    <script src="/cs2103-website/plugins/mermaid/mermaid.min.js"></script>
     <script type="module">
     window.mermaidPromise = null;
     
     const loadMermaid = () => {
       if (window.mermaidPromise === null) {
-        window.mermaidPromise = import('https://unpkg.com/mermaid@10/dist/mermaid.esm.min.mjs')
+        window.mermaidPromise = import('mermaidAssets/mermaid.min.js')
           .then(({ default: mermaid }) => {
             mermaid.initialize({
               startOnLoad: false,
