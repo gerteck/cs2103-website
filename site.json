@@ -80,7 +80,7 @@
     }
   },
   "deploy": {
-    "message": "Site Update, 13 April 2025",
+    "message": "Site Update. Update on MarkBind v6.0.0",
     "branch": "gh-pages"
   }
 }
